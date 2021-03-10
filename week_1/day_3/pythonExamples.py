@@ -22,9 +22,12 @@
 # Sequence of labeled values {key: value}
 #{"stringName": "StringValue"}
 #{"FavoriteColor": "Red"}
-print("Hello World")
-print("My name is James and I am in Atlanta")
-greeting = "Hello!"
-classSize = 23
-print(greeting)
-print(classSize)
+#greeting = "Hello!"
+#classSize = 23
+#somethingToCallIt = ["students", 23, True]
+#somethingToCallIt = {"helloPythonWorld": 23, "we are students": 24.5}
+#variableNameThree = 3
+#print(greeting)
+#print(classSize)
+#print(somethingToCallIt)
+#print(variableNameThree)
