@@ -19,7 +19,7 @@
 # Nesting
 #["list", ["list"]]
 # Dictionary
-# Sequence of labeled values {keyworld: value}
+# Sequence of labeled values {keyword: value}
 #{"stringName": "StringValue"}
 #{"FavoriteColor": "Red"}
 #greeting = "Hello!"

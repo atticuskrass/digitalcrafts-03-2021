@@ -8,3 +8,11 @@ print(result1)
 print(result2)
 print(result3)
 print(result4)
+
+# Using Functions for Calc
+
+getFirstNumber = input("Gimme a number")
+getSecondNumber = input("Gimme a second number")
+getOperand = input("Gimme a Operand")
+if (getOperand = "/")
+division(getFirstNumber, getSecondNumber)
