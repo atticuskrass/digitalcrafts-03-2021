@@ -1,45 +1,74 @@
-# Display the main menu
-while True:
-    print("""########################################
+# store dictionaries in a list +
+# make dictionary(ies) +
+# delete something on a list +
+# add something to a list +
+# view everything on the list +
+# have a way to quit +
+# can't stop won't stop until Q :check + 
+# MAKE THEM IN FUNCTIONS check in progress +
 
-    James Waldens ToDo Application
+toDoList = []
+def welcomeMessage():
+    message = """\n
+()()()()()()()()()(()())
 
-    Select a number/letter for the action you wish to perform. 
+Welcome to my To Do App!
 
-    Press 1 to Add Task.
-    Press 2 to Delete Task.
-    Press 3 to View All Tasks.
-    Press q to quit.
+Press 1 to Add Task
+Press 2 to Delete Task
+Press 3 to View All Tasks
+Press q to Quit Program
 
-    ##############################################""")
+()()()()()()()()()()()()
+\n"""
+    return print(message)
+# I understand, question: how does the toDoDictionary know to put together the "title":"priority" key:value pair?
+def addFunction():
+    toDoDictionary = {}
+    addTask = input("Enter task: ")
+    priorityOfTask = input("Assign priority: ")
+    toDoDictionary["title"] = addTask   
+    toDoDictionary["priority"] = priorityOfTask
+    toDoList.append(toDoDictionary)
+    return print("I added * %s * to your list of things to do" % addTask)
+# I understand
+def viewFunction():
+    count = 1
+    print("Your tasks")
+    for task in toDoList:
+        print("%d. %s = %s" % (count, task["title"], task["priority"]))
+        count += 1
+    return print("Your tasks")
+# I understand
+def delFunction():
+    print("Here are your tasks")
+    viewFunction()
+    delTask = int(input(
+        "What task would you like to delete (choose the index)\n"))
+    taskToDeleteIndex = delTask - 1
+    taskThatIsGettingDeleted = toDoList[taskToDeleteIndex]
+    del toDoList[taskToDeleteIndex]
+    return print("I deleted %s off your list" % taskThatIsGettingDeleted)
+# I understand
+def determineTask(userChoice):
+    whatTheyChose = ""
+    if(userChoice == "1"):
+        whatTheyChose = addFunction()
+    elif(userChoice == "2"):
+        whatTheyChose = delFunction()
+    elif(userChoice == "3"):
+        whatTheyChose = viewFunction()
+    # elif(userChoice == "q"):
 
-    selection = input("Make your selection: ")
+    else:
+        print("Bad key ")
 
-    # Determine which action to perform based on user selection
-    if selection == "1":
-        def addTask():
-            return
-    elif selection == "2":
-        pass
-    elif selection == "3":
-        displayTasks()
-    elif selection == "q":
-        exit()
+    whatTheyChose = choice
+    return whatTheyChose
 
-# Add tasks to the task list
-    taskList = [{"Wash My Car": "High"}, {"Mow The Lawn": "Low"}, {"Make Jar-Jar Binks Doomer Meme": "High"}]
-# Display All Tasks
-def displayTasks():
-    print("---Task List---")
-    for index in taskList:
-        print(i)
-# Add task to task list
-def addTask():
-    task = input("Enter task to the Task List: ")
-    taskList.append(task)
-    print(task + " has been added to Task List.")
-# Remove task from task list
-def removeTask():
-    task = input("Select task for removal: ")
-    taskList.remove(task)
-    print(task + "has been removed from Task List.")
+choice = ""
+while(choice != "q"):
+    welcomeMessage()
+    userChoices = input("What would you like to do?")
+    outcome = determineTask(userChoices)
+    choice = outcome
