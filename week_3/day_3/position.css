@@ -1,0 +1,13 @@
+.position-container {
+	position: relative;
+	left: 100px;
+}
+.second-position-container {
+	position: absolute;
+	bottom: -600px;
+}
+.inbetween-container {
+	position: fixed;
+	bottom: 50px;
+	left: 300px;
+}

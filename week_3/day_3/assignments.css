@@ -1,0 +1,13 @@
+.box {
+	background-color: darkred;
+	color: gold;
+	width: 150px;
+	height: 150px;
+	margin: 16px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.box-of-boxes {
+	display: flex;
+}

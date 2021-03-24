@@ -1,0 +1,33 @@
+.basic-flex {
+	display: flex;
+}
+.basic-flex-direction {
+	display: flex;
+	flex-direction: column;
+	/* values: row, row-reverse, column-column-reverse */
+}
+.basic-flex-wrap {
+	display: flex;
+	/* flex-wrap: wrap-reverse; */
+	flex-wrap: wrap;
+	/* values: (default:nowrap),wrap,wrap-reverse */
+}
+
+.basic-flex-justify-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.basic-flex-justify-content-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.basic-flex-align-items {
+	padding: 10px;
+	background-color: blue;
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 20px;
+}

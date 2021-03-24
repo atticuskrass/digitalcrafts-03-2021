@@ -1,0 +1,30 @@
+h1 {
+	color: #9e1789;
+}
+body {
+	background-color: rgb(96, 118, 160);
+}
+.dateOfBirth {
+	color: red;
+}
+
+.cityName {
+	font-size: 8px;
+}
+#city {
+	font-size: 30px;
+}
+
+.exampleWeGonnaUse {
+	background-color: red;
+	height: 200px;
+	width: 200px;
+	padding: 20px;
+}
+
+.paragraphInsideTheDiv {
+	background-color: maroon;
+	color: white;
+	margin: 10px 10px 10px 10px;
+	padding: 20px;
+}
