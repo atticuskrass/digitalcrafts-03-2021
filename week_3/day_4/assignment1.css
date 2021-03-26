@@ -1,0 +1,28 @@
+.main-container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 120px 120px 120px;
+	grid-template-rows: 60px 60px;
+	grid-gap: 5px;
+}
+#main {
+	background-color: blueviolet;
+}
+#content-div-1 {
+	background-color: crimson;
+}
+#content-div-2 {
+	background-color: darkmagenta;
+}
+#content-div-3 {
+	background-color: darkslateblue;
+}
+#content-div-4 {
+	background-color: crimson;
+}
+#content-div-5 {
+	background-color: darkmagenta;
+}
+#content-div-6 {
+	background-color: darkslateblue;
+}

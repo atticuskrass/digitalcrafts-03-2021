@@ -1,28 +1,25 @@
-.navbar {
-	overflow: hidden;
-	background-color: darkslategrey;
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"about about portfolio portfolio"
+		"about about blog contact";
 }
-.navbar a {
-	display: block;
-	text-align: center;
-	float: left;
-	padding: 10px 15px;
-	color: #ec7063;
-	text-decoration: none;
-	font-size: x-large;
-	font-family: Arial, Helvetica, sans-serif;
-	opacity: 0.8;
+#about {
+	grid-area: about;
+	background-color: black;
 }
-body {
-	background-color: #212f3d;
+#portfolio {
+	grid-area: portfolio;
+	background-color: blueviolet;
 }
-.testbox {
-	display: flex;
-	padding: 50px;
-	justify-content: space-around;
+#blog {
+	grid-area: blog;
+	background-color: crimson;
 }
-.testbox2 {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content: flex-end;
+#contact {
+	grid-area: contact;
+	background-color: darkmagenta;
 }

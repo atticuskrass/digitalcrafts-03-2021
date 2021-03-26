@@ -1,0 +1,26 @@
+.main-container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 5fr 1fr 1fr 1fr;
+	grid-template-rows: 0.25fr 1.5fr 1fr;
+	grid-template-areas:
+		"header header header header"
+		"sidebar content-div-1 content-div-1 content-div-1"
+		"footer footer footer footer";
+}
+#header {
+	grid-area: header;
+	background-color: lightseagreen;
+}
+#sidebar {
+	grid-area: sidebar;
+	background-color: darkviolet;
+}
+#content {
+	grid-area: content-div-1;
+	background-color: firebrick;
+}
+#footer {
+	grid-area: footer;
+	background-color: indigo;
+}
