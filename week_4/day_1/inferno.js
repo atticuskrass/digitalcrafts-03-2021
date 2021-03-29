@@ -1,12 +1,3 @@
-// //let Limbo;
-// const dantesHashOfInferno = {
-// 	level1: {
-// 		name: Limbo,
-// 		contents: [1, 2, 3, 4, 5, 6, 7, 89, 9, 57, 345, 2, 4123, 4423, 4, 234, 24],
-// 	},
-// };
-
-// console.log(dantesHashOfInferno.level1.contents[15]); //
 let Limbo;
 let Lust;
 let Gluttony;
