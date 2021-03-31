@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Tip Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			Bill Amount:<input id="bill" name="bill" type="number" /> Tip
+			Percentage:<input id="tipPercent" name="tipPercent" type="number" />
+			<div id="button">
+				<button onclick="displayValue()" type="button">Calculate</button>
+			</div>
+			<p id="displayTip"></p>
+			<ul id="tipRecord"></ul>
+		</div>
+	</body>
+</html>
+<script>
+	function displayValue() {
+		// Query Selectors
+		let billInput = document.querySelector("#bill").value;
+		let tipPercent = document.querySelector("#tipPercent").value;
+		let displayTip = document.querySelector("#displayTip");
+		let tipList = document.querySelector("#tipRecord");
+		// Create List for Tip History
+		let createList = document.createElement("li");
+		createList.innerText = tipPercent;
+		tipList.append(createList);
+		// Input Conversions
+		billInput = Number(billInput);
+		tipPercent = Number(tipPercent) / 100;
+		console.log(displayTip);
+		// Calculations
+		billTip = billInput * tipPercent;
+		billTotal = billTip + billInput;
+		displayTip.innerText = billTotal;
+	}
+</script>

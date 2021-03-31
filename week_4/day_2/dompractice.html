@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body id="root">
+		<!-- <h1 id="main-header"> DOM 101</h1>
+        <ul id="list">
+            <li class="list-item1">User</li>
+            <li class="list-item">About</li>
+            <li class="list-item">Contact</li>
+            <li class="list-item1">Chat</li>
+        </ul> -->
+	</body>
+	<script>
+		function addDiv() {
+			const root = document.getElementById("root");
+			const mainDiv = document.createElement("div");
+			mainDiv.className = "main-container";
+			const ul = document.createElement("ul");
+			ul.id = "ul-list";
+			const li1 = document.createElement("li");
+			li1.innerText = "text";
+			const li2 = document.createElement("li");
+			li2.innerText = "text";
+			const li3 = document.createElement("li");
+			li3.innerText = "text";
+			const li4 = document.createElement("li");
+			li4.innerText = "text";
+			const li5 = document.createElement("li");
+			li5.innerText = "text";
+			const input = document.createElement("input");
+			input.type = "radio";
+			const secondInput = document.createElement("input");
+
+			ul.append(li1, li2, li3, li4, li5);
+			mainDiv.append(ul, input, secondInput);
+			root.append(mainDiv);
+		}
+		addDiv();
+	</script>
+</html>

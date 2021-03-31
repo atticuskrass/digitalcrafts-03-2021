@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<h1 class="header">Dom practice 2</h1>
+			<label for="number">Number</label>
+			<input class="input" name="number" type="number" />
+			<!-- event handler used to fire a function on click -->
+			<button onclick="displayValue()" class="button">Submit</button>
+			<h3>Your number is:</h3>
+			<p class="displayNumber"></p>
+		</div>
+	</body>
+	<script>
+		// function fired by the event handler
+		function displayValue() {
+			// .value can be used to grab the value currently residing insidse the element
+			// target the input field to grab the element AND get the value inside the input element
+			const numberTheyEntered = document.querySelector(".input").value;
+			// target the paragraph element
+			const paragraphTargeted = document.querySelector(".displayNumber");
+			// change innerText of the element to the number entered
+			paragraphTargeted.innerText = numberTheyEntered;
+		}
+		// event handlers can be put on certain html elements
+		// they will trigger, when an event happens
+		// onchange: triggers when something has changed inside the element
+		// onclick: triggers when it is clicked
+	</script>
+</html>
