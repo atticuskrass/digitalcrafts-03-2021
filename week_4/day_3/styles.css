@@ -1,0 +1,72 @@
+.container {
+  /* zachs method is commented out */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-color: #b4f8c8;
+
+  /* randy and tylers method is NOT being used */
+  /* background-color: #b4f8c8;
+  display: flex;
+  height: 100vh;
+  width: 100vw; */
+
+  /* grid way */
+  /* display: grid;
+  background-color: #b4f8c8;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh; */
+
+  /* Christian's fancy way that he totally found */
+  /* display: grid;
+  place-items: center;
+  height: 100vh; */
+}
+.card {
+  /* grid way */
+  /* display: grid;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3; */
+
+  /* zachs method is commented out */
+  /* width: 50vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a0e7e5;
+  /* justify-content: center; */
+
+  /* randy and tylers method is being used */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: #a0e7e5;
+  padding: 2rem; */
+}
+button {
+  padding: 5px;
+  background-color: #fbe7c6;
+  font-size: 1rem;
+  width: 10rem;
+  margin-top: 5px;
+  border-radius: 10px 100px / 120px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input:hover {
+  background-color: #ffaebc;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

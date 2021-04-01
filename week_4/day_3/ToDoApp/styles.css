@@ -1,0 +1,16 @@
+body {
+	background-color: crimson;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 100vh;
+}
+#container {
+	background-color: darkcyan;
+	font-family: monospace;
+	font-size: x-large;
+}
+#task-container {
+	background-color: dimgray;
+	font-family: monospace;
+	font-size: large;
+}

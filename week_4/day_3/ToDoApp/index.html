@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Task Manager</title>
+	</head>
+	<body></body>
+</html>
+<script>
+	// Creating HTML Elements
+	//--------Div Container Element----------
+	const divElement = document.createElement("div");
+	divElement.id = "container";
+	document.body.appendChild(divElement);
+	//--------Div Task Container Element-----
+	const divTaskElement = document.createElement("div");
+	divTaskElement.id = "task-container";
+	document.body.appendChild(divTaskElement);
+	//--------Div Task Checked Container-----
+	const divTaskCheck = document.createElement("div");
+	divTaskCheck.id = "checked-container";
+	document.body.appendChild(divTaskCheck);
+	//--------Header Element-----------------
+	const header1 = document.createElement("h1");
+	header1.id = "header1";
+	header1.innerHTML = "Task Manager";
+	divElement.append(header1);
+	//--------Input (Add Task) (Label)
+	const addTaskInputLabel = document.createElement("label");
+	addTaskInputLabel.innerHTML = "Add Task";
+	addTaskInputLabel.htmlFor = "addTaskInput";
+	divElement.append(addTaskInputLabel);
+	//--------Input (Add Task)---------------
+	const addTaskInput = document.createElement("input");
+	addTaskInput.id = "addTaskInput";
+	addTaskInput.name = "addTaskInput";
+	divElement.append(addTaskInput);
+	//--------Input (Delete Task) (Label)----
+	//const delTaskInputLabel = document.createElement("label");
+	//delTaskInputLabel.innerHTML = "Delete Task";
+	//delTaskInputLabel.htmlFor = "delTaskInput";
+	//divElement.append(delTaskInputLabel);
+	//--------Input (Delete Task)------------
+	//const delTaskInput = document.createElement("input");
+	//delTaskInput.id = "delTaskInput";
+	//delTaskInput.innerHTML = "Delete Task";
+	//divElement.append(delTaskInput);
+	//--------Submit Button------------------
+	const submitBtn = document.createElement("button");
+	submitBtn.id = "submitBtn";
+	submitBtn.innerHTML = "Submit";
+	divElement.append(submitBtn);
+	//--------Stage Tasks for Delete---------
+	const stageTaskBtn = document.createElement("button");
+	stageTaskBtn.id = "delTaskBtn";
+	stageTaskBtn.innerHTML = "Stage Tasks";
+	divElement.append(stageTaskBtn);
+	//--------Delete Task(s) Button---------
+	const delTaskBtn = document.createElement("button");
+	delTaskBtn.id = "delTaskBtn";
+	delTaskBtn.innerHTML = "Delete Task(s)";
+	divElement.append(delTaskBtn);
+	//--------Event Listeners-----------------
+	const submitBtnEventListen = document.querySelector("submitBtn");
+	submitBtn.addEventListener("click", function () {
+		addTask();
+	});
+	const stageTaskBtnEventListen = document.querySelector("stageTaskBtn");
+	stageTaskBtn.addEventListener("click", function () {
+		stageTask();
+	});
+
+	const delTaskBtnEventListen = document.querySelector("delTaskBtn");
+	delTaskBtn.addEventListener("click", function () {
+		delTask();
+	});
+	//--------Create Task List plus Checkbox---------------
+	const taskList = document.createElement("ul");
+	taskList.id = "taskList";
+	divTaskElement.append(taskList);
+	const checkBox = document.createElement("input");
+	//checkBox.id = "listItemCheckBox";
+	checkBox.name = "listItemCheckBox;";
+	const taskListItem = document.createElement("li");
+	taskListItem.id = "genericListItem";
+	///////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////
+	//---------Functions------------
+	function addTask() {
+		const addedTask = document.querySelector("#addTaskInput").value;
+		const taskList = document.querySelector("#taskList");
+		const taskListItem = document.createElement("li");
+		const checkBox = document.createElement("input");
+		checkBox.type = "checkbox";
+		checkBox.id = "listItemCheckBox";
+		taskListItem.id = "genericListItem";
+		taskListItem.innerText = addedTask;
+		taskList.append(taskListItem);
+		taskListItem.append(checkBox);
+	}
+	function stageTask() {
+		let checkedTaskItem = document.querySelector("listItemCheckBox").checked;
+		if (checkedTaskItem == true) {
+			divTaskCheck.append(checkedTaskItem);
+		}
+	}
+	function delTask() {}
+
+	// if checkbox selected than task can be deleted by clicking delete tasks/submit button
+</script>
