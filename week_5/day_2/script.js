@@ -39,7 +39,7 @@ const getPeople = async () => {
 
 	//---Create Card(s)---//
 
-	let counter = 1;
+	let counter = 0;
 	for (let person of peopleDataJson.data) {
 		//-Div-//
 		const personDiv = document.createElement("div");
@@ -93,7 +93,7 @@ const getCompanies = async () => {
 
 	//---Create Card(s)---//
 
-	let counter = 1;
+	let counter = 0;
 	for (let company of companyDataJson.data) {
 		//-Div-//
 		const companyDiv = document.createElement("div");

@@ -4,11 +4,22 @@ body {
 	font-family: "Libre Caslon Display", serif;
 	font-size: larger;
 }
-#headerDiv {
-	position: fixed;
-}
+/* #headerDiv {
+	position: sticky;
+} */
 #divContainer {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 0.1fr);
+	grid-template-rows: repear(10, 0.1fr);
+	align-items: center;
+	height: 100%;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	text-align: center;
+	background-color: #485461;
+	border-radius: 25px;
 }
 .personDiv {
 	background-color: #d2c6b6;
