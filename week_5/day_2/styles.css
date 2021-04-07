@@ -20,7 +20,7 @@ body {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.8);
 	background: rgb(145, 92, 182);
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	font-weight: normal;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
@@ -34,11 +34,10 @@ body {
 	box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 #getCompaniesBtn {
-	align-items: center;
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.8);
 	background: rgb(145, 92, 182);
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	font-weight: normal;
 	text-transform: uppercase;
 	transition: all 0.5s ease-in-out;
@@ -63,7 +62,7 @@ body {
 	border-radius: 25px;
 	justify-content: space-around;
 }
-.personDiv {
+.companyDiv {
 	background-color: #d2c6b6;
 	text-align: center;
 	background-size: cover;
@@ -78,9 +77,9 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.1s;
 }
-.personDiv:hover {
+.companyDiv:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-#personCity {
+#companyCardList {
 	list-style-type: none;
 }
