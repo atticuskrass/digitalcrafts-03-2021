@@ -13,6 +13,10 @@ document.body.append(divContainer);
 const headerDiv = document.createElement("div");
 headerDiv.id = "headerDiv";
 document.body.append(headerDiv);
+const appTitle = document.createElement("h1");
+appTitle.id = "appTitle";
+appTitle.innerText = "EngineerSearch";
+headerDiv.append(appTitle);
 const getPeopleBtn = document.createElement("button");
 getPeopleBtn.id = "getPeopleBtn";
 getPeopleBtn.innerText = "Get People";
@@ -21,10 +25,6 @@ const getCompaniesBtn = document.createElement("button");
 getCompaniesBtn.id = "getCompaniesBtn";
 getCompaniesBtn.innerText = "Get Companies";
 headerDiv.append(getCompaniesBtn);
-const appTitle = document.createElement("h1");
-appTitle.id = "appTitle";
-appTitle.innerText = "EngineerSearch";
-headerDiv.append(appTitle);
 
 //----Get People Function----//
 
