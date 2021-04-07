@@ -4,12 +4,8 @@
 const divContainer = document.createElement("div");
 divContainer.id = "divContainer";
 document.body.append(divContainer);
-// const appTitle = document.createElement("h1");
-// appTitle.id = "appTitle";
-// appTitle.innerText = "EngineerSearch";
-// divContainer.append(appTitle);
 
-//---Inputs && Buttons---//
+//---Header && Buttons---//
 const headerDiv = document.createElement("div");
 headerDiv.id = "headerDiv";
 document.body.append(headerDiv);
@@ -77,7 +73,6 @@ const getPeople = async () => {
 		personWebsiteItem.innerText = `Portfolio website address is ${personWebsite}`;
 		const personImage = document.createElement("img");
 		personImage.id = "personImage";
-
 		counter += 1;
 	}
 };
