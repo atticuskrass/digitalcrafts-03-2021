@@ -27,14 +27,16 @@ headerDiv.append(getCompaniesBtn);
 const getPeople = async () => {
 	//---Fetch People Data---//
 
-	const peopleData = await fetch("https://randomuser.me/api/?results=30");
+	const peopleData = await fetch(
+		"https://fakerapi.it/api/v1/persons?_quantity=30"
+	);
 	const peopleDataJson = await peopleData.json();
 	console.log(peopleDataJson);
 
 	//---Create Card(s)---//
 
 	let counter = 0;
-	for (let person of peopleDataJson.results) {
+	for (let person of peopleDataJson.data) {
 		//-Div-//
 		const personDiv = document.createElement("div");
 		personDiv.className = "personDiv";
@@ -42,13 +44,20 @@ const getPeople = async () => {
 		divContainer.append(personDiv);
 
 		//-Element InnerText-//
-		let personFirstName = peopleDataJson.results[counter].name.first;
-		let personLastName = peopleDataJson.results[counter].name.last;
-		let personCity = peopleDataJson.results[counter].location.city;
-		let personCountry = peopleDataJson.results[counter].location.country;
-		let personEmail = peopleDataJson.results[counter].email;
-		let personPhone = peopleDataJson.results[counter].phone;
-		let personPicture = peopleDataJson.results[counter].picture.large;
+		let personFirstName = peopleDataJson.data[counter].firstname;
+		let personLastName = peopleDataJson.data[counter].lastname;
+		let personCity = peopleDataJson.data[counter].address.city;
+		let personCountry = peopleDataJson.data[counter].address.country;
+		let personEmail = peopleDataJson.data[counter].email;
+		let personPhone = peopleDataJson.data[counter].phone;
+		let personWebsite = peopleDataJson.data[counter].website;
+
+		//-Person Image-//
+		const personImage = document.createElement("img");
+		personImage.id = "personImage";
+		Image.height = "100";
+		Image.width = "100";
+		// Image.src =
 
 		//-Person Name Header-//
 		const personName = document.createElement("h3");
@@ -66,9 +75,9 @@ const getPeople = async () => {
 		const personContactItem = document.createElement("li");
 		personCardList.append(personContactItem);
 		personContactItem.innerText = `Can be contacted at ${personEmail} or ${personPhone}`;
-		const personPictureItem = document.createElement("img");
-		personCardList.append(personPictureItem);
-		personPictureItem.src = `${personPicture}`;
+		const personWebsiteItem = document.createElement("li");
+		personCardList.append(personWebsiteItem);
+		personWebsiteItem.innerText = `Portfolio website address is ${personWebsite}`;
 		counter += 1;
 	}
 };
