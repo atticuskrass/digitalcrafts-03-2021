@@ -62,7 +62,7 @@ const getPeople = async () => {
 		personDiv.append(personCardList);
 		const cityListItem = document.createElement("li");
 		personCardList.append(cityListItem);
-		cityListItem.innerText = `Current Location is ${personCity}, ${personCountry}`;
+		cityListItem.innerText = `Currently based in ${personCity}, ${personCountry}`;
 		const personContactItem = document.createElement("li");
 		personCardList.append(personContactItem);
 		personContactItem.innerText = `Can be contacted at ${personEmail} or ${personPhone}`;
@@ -112,7 +112,7 @@ const getCompanies = async () => {
 		companyDiv.append(companyCardList);
 		const companyListItem = document.createElement("li");
 		companyCardList.append(companyListItem);
-		companyListItem.innerText = `Headquarters located is ${companyCity}, ${companyLocale}`;
+		companyListItem.innerText = `Headquarters located in ${companyCity}, ${companyLocale}`;
 		const companyContactItem = document.createElement("li");
 		companyCardList.append(companyContactItem);
 		companyContactItem.innerText = `Can be contacted at ${companyEmail} or ${companyPhone}`;
