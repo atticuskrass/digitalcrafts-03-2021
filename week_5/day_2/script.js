@@ -22,7 +22,7 @@ getCompaniesBtn.id = "getCompaniesBtn";
 getCompaniesBtn.innerText = "Get Companies";
 headerDiv.append(getCompaniesBtn);
 
-//----Get People Function----//
+//----Get Engineers Function----//
 
 const getPeople = async () => {
 	//---Fetch People Data---//
@@ -72,6 +72,8 @@ const getPeople = async () => {
 		counter += 1;
 	}
 };
+
+//----Get Companies Function----//
 
 const getCompanies = async () => {
 	//---Fetch Company Data---//
