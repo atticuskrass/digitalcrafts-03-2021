@@ -15,7 +15,7 @@ appTitle.innerText = "EngineerSearch";
 headerDiv.append(appTitle);
 const getPeopleBtn = document.createElement("button");
 getPeopleBtn.id = "getPeopleBtn";
-getPeopleBtn.innerText = "Get People";
+getPeopleBtn.innerText = "Get Engineers";
 headerDiv.append(getPeopleBtn);
 const getCompaniesBtn = document.createElement("button");
 getCompaniesBtn.id = "getCompaniesBtn";
