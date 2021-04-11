@@ -29,7 +29,6 @@ const getPeople = async () => {
 
 	const peopleData = await fetch("https://randomuser.me/api/?results=30");
 	const peopleDataJson = await peopleData.json();
-	console.log(peopleDataJson);
 
 	//---Create Card(s)---//
 
