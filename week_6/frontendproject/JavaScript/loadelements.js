@@ -3,27 +3,25 @@
 //--Container Div--//
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
-document.body.append(containerDiv);
+document.body.appendChild(containerDiv);
 //--Header/Navigation Div--//
 const headerDiv = document.createElement("div");
 headerDiv.id = "headerDiv-1";
-containerDiv.append(headerDiv);
+document.body.appendChild(headerDiv);
 //--Navigation Links--//
-const homeLink = document.createElement("a");
-homeLink.id = "homeLink";
-headerDiv.append(homeLink);
-const newsLink = document.createElement("a");
-newsLink.id = "newsLink";
-headerDiv.append(newsLink);
-const marketLink = document.createElement("a");
-marketLink.id = "marketLink";
-headerDiv.append(marketLink);
-const cultureLink = document.createElement("a");
-cultureLink.id = "cultureLink";
-headerDiv.append(cultureLink);
-const sportLink = document.createElement("a");
-sportLink.id = "sportLink";
-headerDiv.append(sportLink);
-const techLink = document.createElement("a");
-techLink.id = "techLink";
-headerDiv.append(techLink);
+const anchorHome = document.createElement("a");
+anchorHome.setAttribute("href", "../Home/home.html");
+anchorHome.innerText = "Home";
+anchorHome.id = "anchorHome";
+headerDiv.append(anchorHome);
+const anchorNews = document.createElement("a");
+anchorNews.setAttribute("href", "../News/news.html");
+anchorNews.innerText = "News";
+anchorNews.id = "anchorNews";
+headerDiv.append(anchorNews);
+const anchorCulture = document.createElement("a");
+anchorCulture.setAttribute("href", "..Culture/culture.html");
+anchorCulture.innerText = "Culture and Art";
+anchorCulture.id = "anchorCulture";
+headerDiv.append(anchorCulture);
+const anchorMarket = document.createElement("a");

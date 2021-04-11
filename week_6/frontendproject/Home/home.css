@@ -1,8 +1,15 @@
-body {
+/* body {
 	box-sizing: border-box;
+	display: grid;
 }
 #containerDiv-1 {
 	display: grid;
-	height: 100vh;
+	height: 60vh;
 	background-color: cadetblue;
 }
+#headerDiv-1 {
+	height: 40vh;
+	background-color: coral;
+	top: 0;
+	margin-bottom: 50px;
+} */
