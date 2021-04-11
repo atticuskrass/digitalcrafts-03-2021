@@ -1,0 +1,8 @@
+body {
+	box-sizing: border-box;
+}
+#containerDiv-1 {
+	display: grid;
+	height: 100vh;
+	background-color: cadetblue;
+}

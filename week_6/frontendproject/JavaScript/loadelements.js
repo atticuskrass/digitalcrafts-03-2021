@@ -1,6 +1,4 @@
-const loadDefaultLayout = () => {};
-
-//----Persistent HTML Elements----//
+//----Repeat HTML Elements----//
 
 //--Container Div--//
 const containerDiv = document.createElement("div");
