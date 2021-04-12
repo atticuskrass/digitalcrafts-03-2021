@@ -2,14 +2,14 @@ body {
 	box-sizing: border-box;
 	/* display: grid; */
 }
-#containerDiv-1 {
-	/* display: grid; */
-	height: 100vh;
-	background-color: cadetblue;
-}
 #headerDiv-1 {
-	height: 20vh;
+	height: 10vh;
 	background-color: coral;
 	top: 0;
 	margin-bottom: 50px;
+}
+#containerDiv-1 {
+	display: grid;
+	height: 100vh;
+	background-color: cadetblue;
 }

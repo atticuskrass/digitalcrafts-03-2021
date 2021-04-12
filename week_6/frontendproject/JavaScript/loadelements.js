@@ -4,6 +4,10 @@
 const headerDiv = document.createElement("div");
 headerDiv.id = "headerDiv-1";
 document.body.appendChild(headerDiv);
+const appTitle = document.createElement("h1");
+appTitle.id = "appTitle-1";
+appTitle.innerText = "Magazine";
+headerDiv.append(appTitle);
 //--Container Div--//
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
@@ -39,3 +43,7 @@ anchorTech.setAttribute("href", "tech.html");
 anchorTech.innerText = "Technology";
 anchorTech.id = "anchorTech";
 headerDiv.append(anchorTech);
+//--Article Div(s)--//
+const articleDiv = document.createElement("div");
+articleDiv.id = "articleDiv";
+containerDiv.append(articleDiv);
