@@ -1,6 +1,7 @@
 //----Repeat HTML Elements----//
 
 //--Header/Navigation Div--//
+
 const headerDiv = document.createElement("div");
 headerDiv.id = "headerDiv-1";
 document.body.appendChild(headerDiv);
@@ -8,11 +9,15 @@ const appTitle = document.createElement("h1");
 appTitle.id = "appTitle-1";
 appTitle.innerText = "Artisan";
 headerDiv.append(appTitle);
+
 //--Container Div--//
+
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
 document.body.appendChild(containerDiv);
+
 //--Navigation Links--//
+
 const anchorHome = document.createElement("a");
 anchorHome.setAttribute("href", "home.html");
 anchorHome.innerText = "Home";
