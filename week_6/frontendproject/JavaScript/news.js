@@ -16,10 +16,10 @@ const getNews1 = async () => {
 		containerDiv.append(articleDiv);
 		//-Element InnerText-//
 		let articleTitle = getNewsDataJson.data[counter].title;
-		let articleDescription = getNewsDataJson[counter].description;
-		let articleSnippet = getNewsDataJson[counter].snippet;
-		let articleSource = getNewsDataJson[counter].url;
-		let articleImage = getNewsDataJson[counter].image_url;
+		let articleDescription = getNewsDataJson.data[counter].description;
+		let articleSnippet = getNewsDataJson.data[counter].snippet;
+		let articleSource = getNewsDataJson.data[counter].url;
+		let articleImage = getNewsDataJson.data[counter].image_url;
 		//-Article Header-//
 		const articleHeader = document.createElement("h2");
 		articleHeader.className = "articleHeader";
@@ -41,9 +41,11 @@ const getNews1 = async () => {
 		articleSourceItem.className = "articleSourceItem";
 		articleSourceItem.innerText = `${articleSource}`;
 		articleCardList.append(articleSourceItem);
-		const articleImageItem = document.createElement("li");
+		const articleImageItem = document.createElement("img");
 		articleImageItem.className = "articleImageItem";
-		articleImageItem.innerText = `${articleImage}`;
+		articleImageItem.src = `${articleImage}`;
 		articleCardList.append(articleImageItem);
+		counter += 1;
 	}
 };
+console.log(getNews1());
