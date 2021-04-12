@@ -1,15 +1,15 @@
-/* body {
+body {
 	box-sizing: border-box;
-	display: grid;
+	/* display: grid; */
 }
 #containerDiv-1 {
-	display: grid;
-	height: 60vh;
+	/* display: grid; */
+	height: 100vh;
 	background-color: cadetblue;
 }
 #headerDiv-1 {
-	height: 40vh;
+	height: 20vh;
 	background-color: coral;
 	top: 0;
 	margin-bottom: 50px;
-} */
+}
