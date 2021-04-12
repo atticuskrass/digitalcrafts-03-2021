@@ -1,15 +1,16 @@
 body {
 	box-sizing: border-box;
+	background-color: #f6fafb;
 	/* display: grid; */
 }
 #headerDiv-1 {
 	height: 10vh;
-	background-color: coral;
+	background-color: #d49c6b;
 	top: 0;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 #containerDiv-1 {
 	display: grid;
 	height: 100vh;
-	background-color: cadetblue;
+	background-color: #5e6668;
 }

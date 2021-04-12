@@ -1,0 +1,15 @@
+body {
+	box-sizing: border-box;
+	/* display: grid; */
+}
+#headerDiv-1 {
+	height: 10vh;
+	background-color: coral;
+	top: 0;
+	margin-bottom: 50px;
+}
+#containerDiv-1 {
+	display: grid;
+	height: 100vh;
+	background-color: cadetblue;
+}
