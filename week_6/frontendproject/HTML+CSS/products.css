@@ -1,15 +1,23 @@
+/*--Foundation Layout--*/
+
 body {
 	box-sizing: border-box;
-	/* display: grid; */
 }
 #headerDiv-1 {
 	height: 10vh;
 	background-color: coral;
 	top: 0;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 #containerDiv-1 {
 	display: grid;
-	height: 100vh;
+	grid-template-columns: repeat(5, 1fr);
+	height: 80vh;
 	background-color: cadetblue;
+	margin-bottom: 20px;
+}
+#containerDiv-2 {
+	display: grid;
+	background-color: darkslateblue;
+	height: 30vh;
 }

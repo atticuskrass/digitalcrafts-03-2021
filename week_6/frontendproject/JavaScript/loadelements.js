@@ -16,6 +16,11 @@ const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
 document.body.appendChild(containerDiv);
 
+//--Container Div 2--//
+const containerDiv2 = document.createElement("div");
+containerDiv2.id = "containerDiv-2";
+document.body.appendChild(containerDiv2);
+
 //--Navigation Links--//
 
 const anchorHome = document.createElement("a");
@@ -25,12 +30,12 @@ anchorHome.id = "anchorHome";
 headerDiv.append(anchorHome);
 const anchorCreators = document.createElement("a");
 anchorCreators.setAttribute("href", "creators.html");
-anchorCreators.innerText = "Creators";
+anchorCreators.innerText = "Artisans";
 anchorCreators.id = "anchorCreators";
 headerDiv.append(anchorCreators);
 const anchorProducts = document.createElement("a");
 anchorProducts.setAttribute("href", "products.html");
-anchorProducts.innerText = "Products";
+anchorProducts.innerText = "Market";
 anchorProducts.id = "anchorProducts";
 headerDiv.append(anchorProducts);
 const anchorCompanies = document.createElement("a");
