@@ -43,7 +43,3 @@ anchorTech.setAttribute("href", "tech.html");
 anchorTech.innerText = "Technology";
 anchorTech.id = "anchorTech";
 headerDiv.append(anchorTech);
-//--Article Div(s)--//
-const articleDiv = document.createElement("div");
-articleDiv.id = "articleDiv";
-containerDiv.append(articleDiv);
