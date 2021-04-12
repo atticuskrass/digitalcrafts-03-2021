@@ -17,8 +17,27 @@ const getNews1 = async () => {
 		//-Element InnerText-//
 		let articleTitle = getNewsDataJson.data[counter].title;
 		let articleDescription = getNewsDataJson[counter].description;
-		let articlrSnippet = getNewsDataJson[counter].snippet;
+		let articleSnippet = getNewsDataJson[counter].snippet;
 		let articleSource = getNewsDataJson[counter].url;
 		let articleImage = getNewsDataJson[counter].image_url;
+		//-Article Header-//
+		const articleHeader = document.createElement("h2");
+		articleHeader.className = "articleHeader";
+		articleHeader.innerText = `${articleTitle}`;
+		articleDiv.append(articleHeader);
+		//-Article Card Items-//
+		const articleCardList = document.createElement("ul");
+		articleCardList.className = "articleCardList";
+		articleHeader.append(articleCardList);
+		const articleDescriptItem = document.createElement("li");
+		articleDescriptItem.className = "articleDescriptItem";
+		articleCardList.append(articleDescriptItem);
+		const articleSnippetItem = document.createElement("li");
+		articleSnipperItem.className = "articleSnippetItem";
+		articleCardList.append(articleSnippetItem);
+		const articleSourceItem = document.createElement("li");
+		articleSourceItem = documemt.createElement("li");
+		articleCardList.append(articleSourceItem);
+		const articleImageItem = document.createElement("li");
 	}
 };

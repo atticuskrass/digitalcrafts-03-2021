@@ -31,7 +31,6 @@ const getCreators = async () => {
 		let personCity = peopleDataJson.results[counter].location.city;
 		let personCountry = peopleDataJson.results[counter].location.country;
 		let personEmail = peopleDataJson.results[counter].email;
-		let personPhone = peopleDataJson.results[counter].phone;
 		let personPicture = peopleDataJson.results[counter].picture.large;
 		//-Creator Name Header-//
 		const personName = document.createElement("h3");
