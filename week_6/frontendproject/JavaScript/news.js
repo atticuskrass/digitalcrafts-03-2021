@@ -31,13 +31,19 @@ const getNews1 = async () => {
 		articleHeader.append(articleCardList);
 		const articleDescriptItem = document.createElement("li");
 		articleDescriptItem.className = "articleDescriptItem";
+		articleDescriptItem.innerText = `${articleDescription}`;
 		articleCardList.append(articleDescriptItem);
 		const articleSnippetItem = document.createElement("li");
 		articleSnipperItem.className = "articleSnippetItem";
+		articleSnippetItem.innerText = `${articleSnippet}`;
 		articleCardList.append(articleSnippetItem);
 		const articleSourceItem = document.createElement("li");
-		articleSourceItem = documemt.createElement("li");
+		articleSourceItem.className = "articleSourceItem";
+		articleSourceItem.innerText = `${articleSource}`;
 		articleCardList.append(articleSourceItem);
 		const articleImageItem = document.createElement("li");
+		articleImageItem.className = "articleImageItem";
+		articleImageItem.innerText = `${articleImage}`;
+		articleCardList.append(articleImageItem);
 	}
 };
