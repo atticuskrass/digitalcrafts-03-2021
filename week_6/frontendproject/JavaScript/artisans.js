@@ -68,6 +68,9 @@ grabArtisansBtn.addEventListener("click", () => {
 	getCreators2();
 });
 const grabClearBtn = document.querySelector("#clearButton");
+grabClearBtn.addEventListener("click", () => {
+	clearPage();
+});
 
 //---Get Creators Function(s)---//
 const getCreators = async () => {
@@ -151,4 +154,8 @@ const getCreators2 = async () => {
 		personPictureItem.src = `${personPicture}`;
 		counter += 1;
 	}
+};
+const clearPage = async () => {
+	const grabAllCreatorDivs = document.querySelector(".featuredCreatorDiv");
+	grabAllCreatorDivs.remove();
 };
