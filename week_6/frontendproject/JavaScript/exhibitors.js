@@ -3,7 +3,7 @@
 const submitButton = document.createElement("button");
 submitButton.id = "submitButton";
 submitButton.type = "input";
-submitButton.innerText = "Get Companies";
+submitButton.innerText = "Get Exhibitors";
 headerDiv.append(submitButton);
 const clearButton = document.createElement("button");
 clearButton.id = "clearButton";
@@ -22,12 +22,14 @@ const getExhibitors = async () => {
 	let counter = 0;
 	for (let company of companyDataJson.data) {
 		//-Div-//
+
 		const companyDiv = document.createElement("div");
 		companyDiv.className = "companyDiv";
 		companyDiv.setAttribute("id", `company-${counter}`);
 		containerDiv.append(companyDiv);
 
 		//-Element InnerText-//
+
 		let companyName = companyDataJson.data[counter].name;
 		let companyLocale = companyDataJson.data[counter].country;
 		let companyCity = companyDataJson.data[counter].addresses[0].city;
@@ -36,12 +38,14 @@ const getExhibitors = async () => {
 		let companyPhone = companyDataJson.data[counter].phone;
 
 		//-Company Name Header-//
+
 		const companyHeaderName = document.createElement("h3");
 		companyHeaderName.id = "companyHeaderName";
 		companyDiv.append(companyHeaderName);
 		companyHeaderName.innerText = `${companyName}`;
 
 		//-Company Card List-//
+
 		const companyCardList = document.createElement("ul");
 		companyCardList.id = "companyCardList";
 		companyDiv.append(companyCardList);
@@ -67,12 +71,14 @@ const getExhibitors2 = async () => {
 	let counter = 0;
 	for (let company of companyDataJson.data) {
 		//-Div-//
+
 		const companyDiv = document.createElement("div");
 		companyDiv.className = "companyDiv";
 		companyDiv.setAttribute("id", `company-${counter}`);
 		containerDiv2.append(companyDiv);
 
 		//-Element InnerText-//
+
 		let companyName = companyDataJson.data[counter].name;
 		let companyLocale = companyDataJson.data[counter].country;
 		let companyCity = companyDataJson.data[counter].addresses[0].city;
@@ -81,12 +87,14 @@ const getExhibitors2 = async () => {
 		let companyPhone = companyDataJson.data[counter].phone;
 
 		//-Company Name Header-//
+
 		const companyHeaderName = document.createElement("h3");
 		companyHeaderName.id = "companyHeaderName";
 		companyDiv.append(companyHeaderName);
 		companyHeaderName.innerText = `${companyName}`;
 
 		//-Company Card List-//
+
 		const companyCardList = document.createElement("ul");
 		companyCardList.id = "companyCardList";
 		companyDiv.append(companyCardList);
@@ -103,4 +111,4 @@ const getExhibitors2 = async () => {
 	}
 };
 console.log(getExhibitors());
-console.log(getExhibitors());
+console.log(getExhibitors2());
