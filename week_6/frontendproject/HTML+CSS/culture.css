@@ -3,13 +3,15 @@
 body {
 	box-sizing: border-box;
 	font-family: "Baskervville", serif;
-	background-color: #050d25;
+	background-color: #dcdcdd;
 }
 #headerDiv-1 {
-	height: 10vh;
-	background-color: coral;
+	height: 50vh;
+	background-color: #d0c3bd;
 	top: 0;
 	margin-bottom: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 #containerDiv-1 {
 	display: grid;
