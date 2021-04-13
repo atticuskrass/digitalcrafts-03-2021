@@ -156,6 +156,6 @@ const getCreators2 = async () => {
 	}
 };
 const clearPage = async () => {
-	const grabAllCreatorDivs = document.querySelector(".featuredCreatorDiv");
+	const grabAllCreatorDivs = document.querySelectorAll(".featuredCreatorDiv");
 	grabAllCreatorDivs.remove();
 };

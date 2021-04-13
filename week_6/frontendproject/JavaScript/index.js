@@ -10,32 +10,17 @@ appTitle.id = "appTitle-1";
 appTitle.innerText = "Artisan";
 headerDiv.append(appTitle);
 
-//-Inputs + Buttons-//
-
-// const inputName = document.createElement("input");
-// inputName.id = "inputName";
-// inputName.type = "text";
-// inputName.placeholder = "Username";
-// headerDiv.append(inputName);
-// const inputPassword = document.createElement("input");
-// inputPassword.id = "inputPassword";
-// inputPassword.type = "text";
-// inputPassword.placeholder = "Password";
-// headerDiv.append(inputPassword);
-// const submitButtonHome = document.createElement("button");
-// submitButtonHome.id = "submitButtonHome";
-// submitButtonHome.type = "text";
-// submitButtonHome.innerText = "Submit";
-// headerDiv.append(submitButtonHome);
-
 //--Container Div (s)--//
 
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
 document.body.appendChild(containerDiv);
-// const containerDiv2 = document.createElement("div");
-// containerDiv2.id = "containerDiv-2";
-// document.body.appendChild(containerDiv2);
+const containerDiv2 = document.createElement("div");
+containerDiv2.id = "containerDiv-2";
+document.body.appendChild(containerDiv2);
+const containerDiv3 = document.createElement("div");
+containerDiv3.id = "containerDiv-3";
+document.body.appendChild(containerDiv3);
 
 //-Navigation Links--//
 
