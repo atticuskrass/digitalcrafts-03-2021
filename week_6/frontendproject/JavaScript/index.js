@@ -52,8 +52,8 @@ headerDiv.append(anchorCompanies);
 
 //--Event Listeners--//
 
-const grabHomeLink = document.querySelector("#containerDiv-1");
-grabHomeLink.addEventListener("mousedown", () => {
+// const grabHomeLink = document.querySelector("#containerDiv-1");
+document.addEventListener("DOMContentLoaded", () => {
 	getCreators();
 });
 
