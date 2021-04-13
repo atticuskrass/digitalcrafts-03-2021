@@ -15,7 +15,7 @@ body {
 	text-align: center;
 }
 #titleDiv {
-	/* margin-top: 250px; */
+	display: flex;
 }
 #anchorDiv {
 	background-color: honeydew;
@@ -69,9 +69,10 @@ body {
 	margin-bottom: 30px;
 	margin-left: 30px;
 	border-radius: 250px 15px 15px;
+	color: indianred;
 }
 #personName {
-	margin-left: 200px;
+	margin-left: 160px;
 	margin-top: 50px;
 }
 #personList {
