@@ -47,10 +47,10 @@ anchorCompanies.innerText = "Exhibitors";
 anchorCompanies.id = "anchorCompanies";
 headerDiv.append(anchorCompanies);
 
-//--Buttons--//
+//--Artisan(s) Buttons--//
 
 const submitButton = document.createElement("button");
-submitButton.id = "submitButton";
+submitButton.id = "getArtisansBtn";
 submitButton.type = "input";
 submitButton.innerText = "Get Artisans";
 headerDiv.append(submitButton);
@@ -59,6 +59,15 @@ clearButton.id = "clearButton";
 clearButton.type = "input";
 clearButton.innerText = "Clear Page";
 headerDiv.append(clearButton);
+
+//--Event Listeners--//
+
+const grabArtisansBtn = document.querySelector("#getArtisansBtn");
+grabArtisansBtn.addEventListener("click", () => {
+	getCreators();
+	getCreators2();
+});
+const grabClearBtn = document.querySelector("#clearButton");
 
 //---Get Creators Function(s)---//
 const getCreators = async () => {
@@ -143,5 +152,3 @@ const getCreators2 = async () => {
 		counter += 1;
 	}
 };
-console.log(getCreators());
-console.log(getCreators2());
