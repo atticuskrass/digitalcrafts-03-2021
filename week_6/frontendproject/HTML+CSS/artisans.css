@@ -9,16 +9,15 @@ body {
 	height: 50vh;
 	background-color: #d0c3bd;
 	top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: center;
 }
 #titleDiv {
-	display: flex;
 }
 #anchorDiv {
-	background-color: honeydew;
+	background-color: #d0c3bd;
 	margin-top: 400px;
 	height: 6%;
 	font-size: large;
@@ -45,7 +44,7 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	height: 100vh;
 	/* background-color: cadetblue; */
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
 	margin-right: 30px;
