@@ -44,11 +44,16 @@ body {
 	border-radius: 250px 15px 15px;
 }
 #personName {
-	margin-right: 50px;
+	margin-left: 200px;
+	margin-top: 50px;
 }
 #personList {
 	color: lemonchiffon;
 	list-style-type: none;
 	margin-left: 50px;
 	margin-top: 50px;
+}
+.personPictureItem {
+	margin-left: 60px;
+	margin-top: 60px;
 }
