@@ -14,11 +14,31 @@ body {
 	margin-right: 100px;
 	text-align: center;
 }
+#titleDiv {
+	/* margin-top: 250px; */
+}
 #anchorDiv {
 	background-color: honeydew;
 	margin-top: 400px;
-	height: 10%;
-	font-size: x-large;
+	height: 6%;
+	font-size: large;
+	/* text-align: center; */
+}
+#anchorHome {
+	margin-right: 20px;
+	margin-left: 80px;
+}
+#anchorCreators {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#anchorProducts {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#anchorCompanies {
+	margin-right: 80px;
+	margin-left: 20px;
 }
 #containerDiv-1 {
 	display: grid;

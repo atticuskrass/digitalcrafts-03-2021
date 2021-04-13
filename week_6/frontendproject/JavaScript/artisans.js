@@ -5,6 +5,9 @@
 const headerDiv = document.createElement("div");
 headerDiv.id = "headerDiv-1";
 document.body.appendChild(headerDiv);
+const titleDiv = document.createElement("div");
+titleDiv.id = "titleDiv";
+headerDiv.append(titleDiv);
 const appTitle = document.createElement("h1");
 appTitle.id = "appTitle-1";
 appTitle.innerText = "Artisan";
