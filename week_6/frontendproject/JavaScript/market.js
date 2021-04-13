@@ -18,6 +18,12 @@ document.body.appendChild(containerDiv);
 const containerDiv2 = document.createElement("div");
 containerDiv2.id = "containerDiv-2";
 document.body.appendChild(containerDiv2);
+const containerDiv3 = document.createElement("div");
+containerDiv3.id = "containerDiv-3";
+document.body.appendChild(containerDiv3);
+const containerDiv4 = document.createElement("div");
+containerDiv4.id = "containerDiv-4";
+document.body.appendChild(containerDiv4);
 
 //--Navigation Links--//
 
@@ -26,11 +32,6 @@ anchorHome.setAttribute("href", "index.html");
 anchorHome.innerText = "Home";
 anchorHome.id = "anchorHome";
 headerDiv.append(anchorHome);
-const anchorNews = document.createElement("a");
-anchorNews.setAttribute("href", "culture.html");
-anchorNews.innerText = "Culture";
-anchorNews.id = "anchorNews";
-headerDiv.append(anchorNews);
 const anchorCreators = document.createElement("a");
 anchorCreators.setAttribute("href", "artisans.html");
 anchorCreators.innerText = "Artisans";
@@ -59,6 +60,12 @@ clearButton.id = "clearButton";
 clearButton.type = "input";
 clearButton.innerText = "Clear Page";
 headerDiv.append(clearButton);
+
+//--Event Listeners--//
+
+document.addEventListener("DOMContentLoaded", () => {
+	getProducts();
+});
 
 //--Get Product(s) Function--//
 const getProducts = async () => {

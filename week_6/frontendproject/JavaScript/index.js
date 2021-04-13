@@ -29,11 +29,6 @@ anchorHome.setAttribute("href", "index.html");
 anchorHome.innerText = "Home";
 anchorHome.id = "anchorHome";
 headerDiv.append(anchorHome);
-const anchorNews = document.createElement("a");
-anchorNews.setAttribute("href", "culture.html");
-anchorNews.innerText = "Culture";
-anchorNews.id = "anchorNews";
-headerDiv.append(anchorNews);
 const anchorCreators = document.createElement("a");
 anchorCreators.setAttribute("href", "artisans.html");
 anchorCreators.innerText = "Artisans";
@@ -52,7 +47,6 @@ headerDiv.append(anchorCompanies);
 
 //--Event Listeners--//
 
-// const grabHomeLink = document.querySelector("#containerDiv-1");
 document.addEventListener("DOMContentLoaded", () => {
 	getCreators();
 });

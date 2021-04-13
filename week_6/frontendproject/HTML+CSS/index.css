@@ -20,7 +20,7 @@ body {
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-areas:
 		"featuredCreatorDiv, featuredCreatorDiv, featuredCreatorDiv"
-		"featuredCreatorDiv, featuredCreatorDiv, featuredCreatorDiv";
+		"featuredCreatorDiv, featuredCreatorDiv, none";
 	height: 100vh;
 	background-color: #22161c;
 	margin-bottom: 20px;

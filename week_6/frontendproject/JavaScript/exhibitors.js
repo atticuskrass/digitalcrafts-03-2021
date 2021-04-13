@@ -26,11 +26,6 @@ anchorHome.setAttribute("href", "index.html");
 anchorHome.innerText = "Home";
 anchorHome.id = "anchorHome";
 headerDiv.append(anchorHome);
-const anchorNews = document.createElement("a");
-anchorNews.setAttribute("href", "culture.html");
-anchorNews.innerText = "Culture";
-anchorNews.id = "anchorNews";
-headerDiv.append(anchorNews);
 const anchorCreators = document.createElement("a");
 anchorCreators.setAttribute("href", "artisans.html");
 anchorCreators.innerText = "Artisans";
@@ -47,18 +42,11 @@ anchorCompanies.innerText = "Exhibitors";
 anchorCompanies.id = "anchorCompanies";
 headerDiv.append(anchorCompanies);
 
-//--Exhibitor(s) Buttons--//
+//--Event Listeners--//
 
-const submitButton = document.createElement("button");
-submitButton.id = "submitButton";
-submitButton.type = "input";
-submitButton.innerText = "Get Exhibitors";
-headerDiv.append(submitButton);
-const clearButton = document.createElement("button");
-clearButton.id = "clearButton";
-clearButton.type = "input";
-clearButton.innerText = "Clear Page";
-headerDiv.append(clearButton);
+document.addEventListener("DOMContentLoaded", () => {
+	getExhibitors();
+});
 
 //--Get Exhibitors Functions--//
 const getExhibitors = async () => {

@@ -26,11 +26,6 @@ anchorHome.setAttribute("href", "index.html");
 anchorHome.innerText = "Home";
 anchorHome.id = "anchorHome";
 headerDiv.append(anchorHome);
-const anchorNews = document.createElement("a");
-anchorNews.setAttribute("href", "culture.html");
-anchorNews.innerText = "Culture";
-anchorNews.id = "anchorNews";
-headerDiv.append(anchorNews);
 const anchorCreators = document.createElement("a");
 anchorCreators.setAttribute("href", "artisans.html");
 anchorCreators.innerText = "Artisans";
@@ -47,29 +42,11 @@ anchorCompanies.innerText = "Exhibitors";
 anchorCompanies.id = "anchorCompanies";
 headerDiv.append(anchorCompanies);
 
-//--Artisan(s) Buttons--//
-
-const submitButton = document.createElement("button");
-submitButton.id = "getArtisansBtn";
-submitButton.type = "input";
-submitButton.innerText = "Get Artisans";
-headerDiv.append(submitButton);
-const clearButton = document.createElement("button");
-clearButton.id = "clearButton";
-clearButton.type = "input";
-clearButton.innerText = "Clear Page";
-headerDiv.append(clearButton);
-
 //--Event Listeners--//
 
-const grabArtisansBtn = document.querySelector("#getArtisansBtn");
-grabArtisansBtn.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
 	getCreators();
 	getCreators2();
-});
-const grabClearBtn = document.querySelector("#clearButton");
-grabClearBtn.addEventListener("click", () => {
-	clearPage();
 });
 
 //---Get Creators Function(s)---//
@@ -100,7 +77,7 @@ const getCreators = async () => {
 		personName.innerText = `${personLastName}, ${personFirstName}`;
 		//-Creator Card List-//
 		const personCardList = document.createElement("ul");
-		personCardList.id = "personCity";
+		personCardList.id = "personList";
 		featuredCreatorDiv.append(personCardList);
 		const cityListItem = document.createElement("li");
 		cityListItem.className = "cityListItem";
@@ -144,7 +121,7 @@ const getCreators2 = async () => {
 		personName.innerText = `${personLastName}, ${personFirstName}`;
 		//-Creator Card List-//
 		const personCardList = document.createElement("ul");
-		personCardList.id = "personCity";
+		personCardList.id = "personList";
 		featuredCreatorDiv.append(personCardList);
 		const cityListItem = document.createElement("li");
 		cityListItem.className = "cityListItem";
