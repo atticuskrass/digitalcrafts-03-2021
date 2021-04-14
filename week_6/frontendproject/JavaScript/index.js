@@ -208,3 +208,5 @@ const getProducts = async () => {
 		counter += 1;
 	}
 };
+//--Scroll To Top Btn--//
+const toTopBtn = document.createElement("button");
