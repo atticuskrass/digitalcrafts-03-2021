@@ -6,6 +6,9 @@ body {
 	background-color: #dcdcdd;
 	height: 100%;
 	background-image: url("https://bit.ly/2Qt2URC");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 #headerDiv-1 {
 	height: 50vh;
@@ -20,6 +23,7 @@ body {
 	background-position: center;
 	color: blue;
 	font-size: xx-large;
+	opacity: 0.7;
 }
 
 /*--Navigation Links--*/
@@ -62,6 +66,7 @@ body {
 	background-position: center;
 	position: relative;
 	text-align: left;
+	opacity: 0.7;
 }
 #topLeft {
 	margin-left: 300px;
@@ -128,6 +133,7 @@ body {
 	margin-left: 30px;
 	border-radius: 250px 15px 250px;
 	color: indianred;
+	opacity: 0.8;
 }
 #personName {
 	margin-left: 160px;
@@ -155,6 +161,7 @@ body {
 	margin-left: 30px;
 	border-radius: 250px 15px 215px;
 	color: indianred;
+	opacity: 0.9;
 }
 #companyHeaderName {
 	margin-left: 160px;
@@ -178,6 +185,7 @@ body {
 	margin-left: 30px;
 	border-radius: 250px 15px 215px;
 	color: indianred;
+	opacity: 0.9;
 }
 .productName {
 	margin-left: 160px;
