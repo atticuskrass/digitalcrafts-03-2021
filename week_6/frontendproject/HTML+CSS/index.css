@@ -152,6 +152,9 @@ body {
 	margin-left: 60px;
 	margin-top: 60px;
 }
+
+/*--To Top Button--*/
+
 #toTopBtn {
 	display: none;
 	position: fixed;

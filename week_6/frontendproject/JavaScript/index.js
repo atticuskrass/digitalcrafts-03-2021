@@ -24,26 +24,33 @@ document.body.appendChild(containerDiv3);
 
 //-Navigation Links--//
 
+const anchorDiv = document.createElement("div");
+anchorDiv.id = "anchorDiv";
+headerDiv.append(anchorDiv);
 const anchorHome = document.createElement("a");
 anchorHome.setAttribute("href", "index.html");
 anchorHome.innerText = "Home";
+anchorHome.className = "headerAnchor";
 anchorHome.id = "anchorHome";
-headerDiv.append(anchorHome);
+anchorDiv.append(anchorHome);
 const anchorCreators = document.createElement("a");
 anchorCreators.setAttribute("href", "artisans.html");
 anchorCreators.innerText = "Artisans";
+anchorCreators.className = "headerAnchor";
 anchorCreators.id = "anchorCreators";
-headerDiv.append(anchorCreators);
+anchorDiv.append(anchorCreators);
 const anchorProducts = document.createElement("a");
 anchorProducts.setAttribute("href", "market.html");
 anchorProducts.innerText = "Market";
+anchorProducts.className = "headerAnchor";
 anchorProducts.id = "anchorProducts";
-headerDiv.append(anchorProducts);
+anchorDiv.append(anchorProducts);
 const anchorCompanies = document.createElement("a");
 anchorCompanies.setAttribute("href", "exhibitors.html");
 anchorCompanies.innerText = "Exhibitors";
+anchorCompanies.className = "headerAnchor";
 anchorCompanies.id = "anchorCompanies";
-headerDiv.append(anchorCompanies);
+anchorDiv.append(anchorCompanies);
 
 //--To Top Button--//
 
@@ -58,10 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	getExhibitors();
 	getProducts();
 });
-// const grabToTopBtn = document.querySelector("#toToBtn");
-// grabToTopBtn.addEventListener("click", () => {
-// 	goTopScroll();
-// });
 
 //--Index Functions--//
 
@@ -235,6 +238,5 @@ grabToTopBtn.addEventListener("click", () => {
 	topFunction();
 });
 const topFunction = () => {
-	// document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	document.documentElement.scrollTop = 0;
 };
