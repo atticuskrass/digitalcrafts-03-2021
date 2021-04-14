@@ -222,3 +222,24 @@ body {
 #toTopBtn:hover {
 	background-color: #555;
 }
+
+/*--Media Queries--*/
+
+@media only screen and (max-width: 600px) {
+	#anchorDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 200px;
+		align-items: center;
+	}
+	#containerDiv-1 {
+		display: grid;
+		grid-template-columns: repeat(1, 0.1fr);
+		grid-template-rows: repeat(30, 0.1fr);
+	}
+	#containerDiv-2 {
+		display: grid;
+		grid-template-columns: repeat(1, 0.1fr);
+		grid-template-rows: repeat(30, 0.1fr);
+	}
+}
