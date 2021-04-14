@@ -97,13 +97,13 @@ const getProducts = async () => {
 		productIMGItem.height = "100";
 		productIMGItem.src = `${productIMG}`;
 		productDiv.append(productIMGItem);
-		const productDescriptItem = document.createElement("li");
-		productDescriptItem.className = "productDescriptItem";
-		productDescriptItem.innerText = `${productDescript}`;
-		productDiv.append(productDescriptItem);
+		// const productDescriptItem = document.createElement("li");
+		// productDescriptItem.className = "productDescriptItem";
+		// productDescriptItem.innerText = `${productDescript}`;
+		// productDiv.append(productDescriptItem);
 		const productPriceItem = document.createElement("li");
 		productPriceItem.className = "productPriceItem";
-		productPriceItem.innerText = `${productPrice}`;
+		productPriceItem.innerText = `$${productPrice}`;
 		productDiv.append(productPriceItem);
 		counter += 1;
 	}
