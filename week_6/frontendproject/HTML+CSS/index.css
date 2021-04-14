@@ -4,6 +4,8 @@ body {
 	box-sizing: border-box;
 	font-family: "Baskervville", serif;
 	background-color: #dcdcdd;
+	height: 100%;
+	background-image: url("https://bit.ly/2Qt2URC");
 }
 #headerDiv-1 {
 	height: 50vh;
@@ -58,16 +60,20 @@ body {
 	background-image: url("https://bit.ly/3dhRbyx");
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
+	text-align: left;
 }
 #topLeft {
-	margin-left: 200px;
-	/* margin-top: 500px; */
+	margin-left: 300px;
+}
+#aboutText1 {
+	margin-top: 200px;
 }
 #containerDiv-1 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 100vh;
-	background-color: #aeb6bf;
+	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -75,12 +81,15 @@ body {
 	margin-bottom: 30px;
 	margin-left: 30px;
 	overflow: scroll;
+}
+#containerDiv-1::-webkit-scrollbar {
+	display: none;
 }
 #containerDiv-2 {
 	display: grid;
 	grid-template-columns: repeat(5, 0.5fr);
 	height: 100vh;
-	background-color: #aeb6bf;
+	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -88,12 +97,15 @@ body {
 	margin-bottom: 30px;
 	margin-left: 30px;
 	overflow: scroll;
+}
+#containerDiv-2::-webkit-scrollbar {
+	display: none;
 }
 #containerDiv-3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 100vh;
-	background-color: #aeb6bf;
+	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -102,7 +114,9 @@ body {
 	margin-left: 30px;
 	overflow: scroll;
 }
-
+#containerDiv-3::-webkit-scrollbar {
+	display: none;
+}
 /*--Artisan Card--*/
 
 .featuredCreatorDiv {
