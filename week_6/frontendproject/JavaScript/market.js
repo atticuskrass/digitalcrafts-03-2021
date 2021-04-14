@@ -50,16 +50,16 @@ headerDiv.append(anchorCompanies);
 
 //--Product(s) Buttons--//
 
-const submitButton = document.createElement("button");
-submitButton.id = "submitButton";
-submitButton.type = "input";
-submitButton.innerText = "Get Products";
-headerDiv.append(submitButton);
-const clearButton = document.createElement("button");
-clearButton.id = "clearButton";
-clearButton.type = "input";
-clearButton.innerText = "Clear Page";
-headerDiv.append(clearButton);
+// const submitButton = document.createElement("button");
+// submitButton.id = "submitButton";
+// submitButton.type = "input";
+// submitButton.innerText = "Get Products";
+// headerDiv.append(submitButton);
+// const clearButton = document.createElement("button");
+// clearButton.id = "clearButton";
+// clearButton.type = "input";
+// clearButton.innerText = "Clear Page";
+// headerDiv.append(clearButton);
 
 //--Event Listeners--//
 
@@ -88,7 +88,7 @@ const getProducts = async () => {
 		let productDescript = getProductDataJson[counter].description;
 		let productPrice = getProductDataJson[counter].price;
 		//-Product Name Header-//
-		const productName = document.createElement("h3");
+		const productName = document.createElement("h5");
 		productName.className = "productName";
 		productName.innerText = `${productTitle}`;
 		productDiv.append(productName);
@@ -113,4 +113,3 @@ const getProducts = async () => {
 		counter += 1;
 	}
 };
-console.log(getProducts());
