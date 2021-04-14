@@ -49,6 +49,12 @@ anchorCompanies.className = "headerAnchor";
 anchorCompanies.id = "anchorCompanies";
 anchorDiv.append(anchorCompanies);
 
+//--To Top Button--//
+
+const toTopBtn = document.createElement("button");
+toTopBtn.id = "toTopBtn";
+document.body.append(toTopBtn);
+
 //--Event Listeners--//
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -154,4 +160,21 @@ const getExhibitors2 = async () => {
 		companyWebsiteItem.innerText = `Company website is ${companyWebsite}`;
 		counter += 1;
 	}
+};
+const grabToTopBtn = document.querySelector("#toTopBtn");
+window.addEventListener("scroll", () => {
+	scrollFunction();
+});
+const scrollFunction = () => {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		grabToTopBtn.style.display = "block";
+	} else {
+		grabToTopBtn.style.display = "none";
+	}
+};
+grabToTopBtn.addEventListener("click", () => {
+	topFunction();
+});
+const topFunction = () => {
+	document.documentElement.scrollTop = 0;
 };

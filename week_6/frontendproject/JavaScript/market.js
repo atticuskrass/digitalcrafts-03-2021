@@ -55,6 +55,12 @@ anchorCompanies.className = "headerAnchor";
 anchorCompanies.id = "anchorCompanies";
 anchorDiv.append(anchorCompanies);
 
+//--To Top Button--//
+
+const toTopBtn = document.createElement("button");
+toTopBtn.id = "toTopBtn";
+document.body.append(toTopBtn);
+
 //--Event Listeners--//
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -155,10 +161,6 @@ const getProducts2 = async () => {
 		productIMGItem.height = "100";
 		productIMGItem.src = `${productIMG}`;
 		productDiv.append(productIMGItem);
-		// const productDescriptItem = document.createElement("li");
-		// productDescriptItem.className = "productDescriptItem";
-		// productDescriptItem.innerText = `${productDescript}`;
-		// productDiv.append(productDescriptItem);
 		const productPriceItem = document.createElement("li");
 		productPriceItem.className = "productPriceItem";
 		productPriceItem.innerText = `>$${productPrice}`;
@@ -269,4 +271,23 @@ const getProducts4 = async () => {
 		productDiv.append(productPriceItem);
 		counter += 1;
 	}
+};
+//--Scroll To Top Btn--//
+
+const grabToTopBtn = document.querySelector("#toTopBtn");
+window.addEventListener("scroll", () => {
+	scrollFunction();
+});
+const scrollFunction = () => {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		grabToTopBtn.style.display = "block";
+	} else {
+		grabToTopBtn.style.display = "none";
+	}
+};
+grabToTopBtn.addEventListener("click", () => {
+	topFunction();
+});
+const topFunction = () => {
+	document.documentElement.scrollTop = 0;
 };

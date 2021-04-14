@@ -3,7 +3,10 @@
 body {
 	box-sizing: border-box;
 	font-family: "Baskervville", serif;
-	background-color: #dcdcdd;
+	background-image: url("https://bit.ly/2Qt2URC");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 #headerDiv-1 {
 	height: 50vh;
@@ -18,6 +21,7 @@ body {
 	background-position: center;
 	color: blue;
 	font-size: xx-large;
+	opacity: 0.7;
 }
 
 /*--Nav Div--*/
@@ -48,7 +52,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 100vh;
-	background-color: #aeb6bf;
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -57,15 +60,20 @@ body {
 	margin-left: 30px;
 	overflow: scroll;
 }
+#containerDiv-1::-webkit-scrollbar {
+	display: none;
+}
 #containerDiv-2 {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	background-color: #aeb6bf;
 	height: 100vh;
 	margin-right: 20px;
 	margin-bottom: 30px;
 	margin-left: 20px;
 	overflow: scroll;
+}
+#containerDiv-2::-webkit-scrollbar {
+	display: none;
 }
 
 /*--Exhibitors Card--*/
@@ -79,6 +87,7 @@ body {
 	margin-left: 30px;
 	border-radius: 250px 15px 215px;
 	color: indianred;
+	opacity: 0.8;
 }
 #companyHeaderName {
 	margin-left: 160px;
