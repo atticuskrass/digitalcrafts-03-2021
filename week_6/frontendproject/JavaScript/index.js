@@ -220,11 +220,21 @@ const getProducts = async () => {
 };
 //--Scroll To Top Btn--//
 
-const goTopScroll = () => {
-	if (document.body.scrollTop() > 20) {
+const grabToTopBtn = document.querySelector("#toTopBtn");
+window.addEventListener("scroll", () => {
+	scrollFunction();
+});
+const scrollFunction = () => {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		grabToTopBtn.style.display = "block";
 	} else {
 		grabToTopBtn.style.display = "none";
 	}
 };
-console.log(goTopScroll());
+grabToTopBtn.addEventListener("click", () => {
+	topFunction();
+});
+const topFunction = () => {
+	// document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
