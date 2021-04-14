@@ -10,6 +10,12 @@ appTitle.id = "appTitle-1";
 appTitle.innerText = "Artisan";
 headerDiv.append(appTitle);
 
+//--About Div--//
+
+const aboutDiv = document.createElement("div");
+aboutDiv.id = "aboutDiv";
+document.body.append(aboutDiv);
+
 //--Container Div (s)--//
 
 const containerDiv = document.createElement("div");
