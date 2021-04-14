@@ -45,6 +45,12 @@ anchorCompanies.innerText = "Exhibitors";
 anchorCompanies.id = "anchorCompanies";
 headerDiv.append(anchorCompanies);
 
+//--To Top Button--//
+
+const toTopBtn = document.createElement("button");
+toTopBtn.id = "toTopBtn";
+document.body.append(toTopBtn);
+
 //--Event Listeners--//
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -52,6 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	getExhibitors();
 	getProducts();
 });
+// const grabToTopBtn = document.querySelector("#toToBtn");
+// grabToTopBtn.addEventListener("click", () => {
+// 	goTopScroll();
+// });
 
 //--Index Functions--//
 
@@ -209,4 +219,12 @@ const getProducts = async () => {
 	}
 };
 //--Scroll To Top Btn--//
-const toTopBtn = document.createElement("button");
+
+const goTopScroll = () => {
+	if (document.body.scrollTop() > 20) {
+		grabToTopBtn.style.display = "block";
+	} else {
+		grabToTopBtn.style.display = "none";
+	}
+};
+console.log(goTopScroll());
