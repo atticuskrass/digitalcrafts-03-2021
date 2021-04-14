@@ -56,6 +56,7 @@ clearButton.innerText = "Clear Page";
 headerDiv.append(clearButton);
 
 //----Get News Function----//
+
 const getNews1 = async () => {
 	//-Get News Data-//
 

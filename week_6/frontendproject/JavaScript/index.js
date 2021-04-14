@@ -166,21 +166,28 @@ const getProducts = async () => {
 	let counter = 0;
 	for (let product of getProductDataJson) {
 		//-Div-//
+
 		const productDiv = document.createElement("div");
 		productDiv.className = "productDiv";
 		productDiv.setAttribute("id", `counter-${counter}`);
 		containerDiv3.append(productDiv);
+
 		//-Element InnerText-//
+
 		let productTitle = getProductDataJson[counter].title;
 		let productIMG = getProductDataJson[counter].image;
 		let productDescript = getProductDataJson[counter].description;
 		let productPrice = getProductDataJson[counter].price;
+
 		//-Product Name Header-//
+
 		const productName = document.createElement("h5");
 		productName.className = "productName";
 		productName.innerText = `${productTitle}`;
 		productDiv.append(productName);
+
 		//-Product Card List-//
+
 		const productCardList = document.createElement("ul");
 		productCardList.className = "productCardList";
 		productDiv.append(productCardList);

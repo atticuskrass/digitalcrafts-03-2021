@@ -14,7 +14,9 @@ body {
 	margin-right: 100px;
 	text-align: center;
 }
+
 /*--Nav Div--*/
+
 #anchorDiv {
 	background-color: #d0c3bd;
 	margin-top: 400px;
@@ -49,16 +51,18 @@ body {
 	margin-bottom: 30px;
 	margin-left: 30px;
 }
-/* #containerDiv-2 {
+#containerDiv-2 {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	background-color: #aeb6bf;
-	height: 60vh;
+	height: 100vh;
 	margin-right: 20px;
 	margin-bottom: 30px;
 	margin-left: 20px;
-} */
-/*--Exhibitors Card CSS--*/
+}
+
+/*--Exhibitors Card--*/
+
 .companyDiv {
 	background-color: #22161c;
 	list-style-type: none;
@@ -79,7 +83,3 @@ body {
 	margin-left: 50px;
 	margin-top: 50px;
 }
-/* .personPictureItem {
-	margin-left: 60px;
-	margin-top: 60px;
-} */

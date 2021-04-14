@@ -14,12 +14,14 @@ body {
 	margin-right: 100px;
 	text-align: center;
 }
+
+/*--Navigation Div--*/
+
 #anchorDiv {
 	background-color: #d0c3bd;
 	margin-top: 400px;
 	height: 6%;
 	font-size: large;
-	/* text-align: center; */
 }
 #anchorHome {
 	margin-right: 20px;
@@ -65,7 +67,7 @@ body {
 	margin-right: 30px;
 	margin-bottom: 30px;
 	margin-left: 30px;
-	border-radius: 250px 15px 15px;
+	border-radius: 250px 15px 215px;
 	color: indianred;
 }
 #personName {
