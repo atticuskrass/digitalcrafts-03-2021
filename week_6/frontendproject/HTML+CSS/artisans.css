@@ -13,12 +13,17 @@ body {
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: center;
+	background-image: url("https://bit.ly/3g9pBFk");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: blue;
+	font-size: xx-large;
 }
 
 /*--Navigation Div--*/
 
 #anchorDiv {
-	background-color: #d0c3bd;
+	background-color: black;
 	margin-top: 400px;
 	height: 6%;
 	font-size: large;

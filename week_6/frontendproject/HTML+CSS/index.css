@@ -13,9 +13,17 @@ body {
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: center;
+	background-image: url("https://bit.ly/3g9pBFk");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: blue;
+	font-size: xx-large;
 }
+
+/*--Navigation Links--*/
+
 #anchorDiv {
-	background-color: #d0c3bd;
+	background-color: black;
 	margin-top: 400px;
 	height: 6%;
 	font-size: large;
@@ -36,9 +44,11 @@ body {
 	margin-right: 80px;
 	margin-left: 20px;
 }
+
+/*--About & Container Divs--*/
+
 #aboutDiv {
 	height: 100vh;
-	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
