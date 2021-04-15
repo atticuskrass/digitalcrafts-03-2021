@@ -12,15 +12,35 @@ headerDiv.append(appTitle);
 
 //--Container Div--//
 
+//-Div 1--//
+const divHeader1 = document.createElement("h2");
+divHeader1.id = "divHeader1";
+divHeader1.innerText = "Clothing & Shoes";
+document.body.appendChild(divHeader1);
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
 document.body.appendChild(containerDiv);
+//-Div 2-//
+const divHeader2 = document.createElement("h2");
+divHeader2.id = "divHeader2";
+divHeader2.innerText = "Jewelry & Accessories";
+document.body.appendChild(divHeader2);
 const containerDiv2 = document.createElement("div");
 containerDiv2.id = "containerDiv-2";
 document.body.appendChild(containerDiv2);
+//-Div 3-//
+const divHeader3 = document.createElement("h2");
+divHeader3.id = "divHeader3";
+divHeader3.innerText = "Home & Living";
+document.body.appendChild(divHeader3);
 const containerDiv3 = document.createElement("div");
 containerDiv3.id = "containerDiv-3";
 document.body.appendChild(containerDiv3);
+//-Div 4-//
+const divHeader4 = document.createElement("h2");
+divHeader4.id = "divHeader4";
+divHeader4.innerText = "Art & Crafts";
+document.body.appendChild(divHeader4);
 const containerDiv4 = document.createElement("div");
 containerDiv4.id = "containerDiv-4";
 document.body.appendChild(containerDiv4);
@@ -92,7 +112,6 @@ const getProducts1 = async () => {
 
 		let productTitle = getProductDataJson[counter].title;
 		let productIMG = getProductDataJson[counter].image;
-		let productDescript = getProductDataJson[counter].description;
 		let productPrice = getProductDataJson[counter].price;
 
 		//-Product Name Header-//

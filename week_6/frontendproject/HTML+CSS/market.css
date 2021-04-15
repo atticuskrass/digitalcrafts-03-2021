@@ -3,7 +3,7 @@
 body {
 	box-sizing: border-box;
 	font-family: "Baskervville", serif;
-	background-image: url("https://bit.ly/3af22Ya");
+	background-image: url("https://bit.ly/3mQo6xb");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -49,6 +49,23 @@ body {
 	margin-right: 80px;
 	margin-left: 20px;
 }
+#divHeader1 {
+	margin-left: 100px;
+	margin-top: 200px;
+	color: darkgoldenrod;
+}
+#divHeader2 {
+	margin-left: 100px;
+	color: darkgoldenrod;
+}
+#divHeader3 {
+	margin-left: 100px;
+	color: darkgoldenrod;
+}
+#divHeader4 {
+	margin-left: 100px;
+	color: darkgoldenrod;
+}
 #containerDiv-1 {
 	display: grid;
 	grid-template-columns: repeat(4, 0.3fr);
@@ -58,6 +75,9 @@ body {
 	margin-right: 30px;
 	margin-left: 30px;
 }
+#containerDiv-1::-webkit-scrollbar {
+	display: none;
+}
 #containerDiv-2 {
 	display: grid;
 	grid-template-columns: repeat(4, 0.3fr);
@@ -66,6 +86,10 @@ body {
 	margin-top: 150px;
 	margin-right: 30px;
 	margin-left: 30px;
+	overflow-x: scroll;
+}
+#containerDiv-2::-webkit-scrollbar {
+	display: none;
 }
 #containerDiv-3 {
 	display: grid;
@@ -75,6 +99,10 @@ body {
 	margin-top: 150px;
 	margin-right: 30px;
 	margin-left: 30px;
+	overflow-x: scroll;
+}
+#containerDiv-3::-webkit-scrollbar {
+	display: none;
 }
 #containerDiv-4 {
 	display: grid;
@@ -84,8 +112,11 @@ body {
 	margin-top: 150px;
 	margin-right: 30px;
 	margin-left: 30px;
+	overflow-x: scroll;
 }
-
+#containerDiv-4::-webkit-scrollbar {
+	display: none;
+}
 /*--Product Card--*/
 
 .productDiv {
@@ -143,6 +174,28 @@ body {
 /*--Media Queries--*/
 
 @media only screen and (max-width: 600px) {
+	#anchorDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 200px;
+		align-items: center;
+	}
+	#anchorHome {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#anchorCreators {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#anchorProducts {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#anchorCompanies {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
 	#containerDiv-1 {
 		display: grid;
 		grid-template-columns: repeat(1, 0.1fr);

@@ -103,6 +103,28 @@ body {
 /*--Media Queries--*/
 
 @media only screen and (max-width: 600px) {
+	#anchorDiv {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 200px;
+		align-items: center;
+	}
+	#anchorHome {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#anchorCreators {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#anchorProducts {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#anchorCompanies {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
 	#containerDiv-1 {
 		display: grid;
 		grid-template-columns: repeat(1, 0.1fr);

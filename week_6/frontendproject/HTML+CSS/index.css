@@ -3,9 +3,7 @@
 body {
 	box-sizing: border-box;
 	font-family: "Baskervville", serif;
-	background-color: #dcdcdd;
-	height: 100%;
-	background-image: url("https://bit.ly/3af22Ya");
+	background-image: url("https://bit.ly/3uS2hQz");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -23,7 +21,7 @@ body {
 	background-position: center;
 	color: blue;
 	font-size: xx-large;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 /*--Navigation Links--*/
@@ -66,7 +64,6 @@ body {
 	background-position: center;
 	position: relative;
 	text-align: left;
-	opacity: 0.7;
 }
 #topLeft {
 	margin-left: 300px;
@@ -78,7 +75,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 100vh;
-	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -94,7 +90,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(5, 0.5fr);
 	height: 100vh;
-	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -110,7 +105,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 100vh;
-	/* background-color: #aeb6bf; */
 	margin-bottom: 30px;
 	list-style-type: none;
 	margin-top: 30px;
@@ -133,7 +127,7 @@ body {
 	margin-left: 30px;
 	border-radius: 250px 15px 250px;
 	color: indianred;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 #personName {
 	margin-left: 160px;
