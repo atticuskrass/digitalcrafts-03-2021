@@ -228,10 +228,6 @@ const getProducts3 = async () => {
 		productIMGItem.height = "100";
 		productIMGItem.src = `${productIMG}`;
 		productDiv.append(productIMGItem);
-		// const productDescriptItem = document.createElement("li");
-		// productDescriptItem.className = "productDescriptItem";
-		// productDescriptItem.innerText = `${productDescript}`;
-		// productDiv.append(productDescriptItem);
 		const productPriceItem = document.createElement("li");
 		productPriceItem.className = "productPriceItem";
 		productPriceItem.innerText = `>$${productPrice}`;

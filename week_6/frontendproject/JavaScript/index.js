@@ -12,20 +12,9 @@ headerDiv.append(appTitle);
 
 //--About Div--//
 
-// const topLeft = document.createElement("div");
-// topLeft.id = "topLeft";
-// document.body.append(topLeft);
 const aboutDiv = document.createElement("div");
 aboutDiv.id = "aboutDiv";
 document.body.append(aboutDiv);
-// const aboutText = document.createElement("p");
-// aboutText.id - "aboutText1";
-// aboutText.innerText = "E-commerce platform for artists";
-// topLeft.append(aboutText);
-// const aboutText2 = document.createElement("p");
-// aboutText2.id = "aboutText2";
-// aboutText2.innerText = "and craftspeople of the future";
-// topLeft.append(aboutText2);
 
 //--Container Div (s)--//
 
