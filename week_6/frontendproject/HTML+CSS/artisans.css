@@ -3,7 +3,7 @@
 body {
 	box-sizing: border-box;
 	font-family: "Baskervville", serif;
-	background-image: url("https://bit.ly/3af22Ya");
+	background-image: url("https://bit.ly/3tohRD8");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -35,21 +35,30 @@ body {
 #anchorHome {
 	margin-right: 20px;
 	margin-left: 80px;
+	text-decoration: none;
 }
 #anchorCreators {
 	margin-right: 20px;
 	margin-left: 20px;
+	text-decoration: none;
 }
 #anchorProducts {
 	margin-right: 20px;
 	margin-left: 20px;
+	text-decoration: none;
 }
 #anchorCompanies {
 	margin-right: 80px;
 	margin-left: 20px;
+	text-decoration: none;
 }
+
 /*--Container Divs--*/
 
+#divHeader1 {
+	margin-left: 200px;
+	margin-top: 200px;
+}
 #containerDiv-1 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -60,19 +69,26 @@ body {
 	margin-right: 30px;
 	margin-bottom: 30px;
 	margin-left: 30px;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #containerDiv-1::-webkit-scrollbar {
 	display: none;
 }
+#divHeader2 {
+	margin-left: 200px;
+	margin-top: 100px;
+}
 #containerDiv-2 {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	height: 60vh;
+	grid-template-columns: repeat(5, 1fr);
+	height: 120vh;
 	margin-right: 20px;
 	margin-bottom: 30px;
 	margin-left: 20px;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #containerDiv-2::-webkit-scrollbar {
 	display: none;
@@ -86,7 +102,7 @@ body {
 	margin-left: 30px;
 	border-radius: 250px 15px 215px;
 	color: indianred;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 #personName {
 	margin-left: 160px;

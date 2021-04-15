@@ -12,9 +12,19 @@ headerDiv.append(appTitle);
 
 //--Container Div--//
 
+//-Div 1-//
+const divHeader1 = document.createElement("h2");
+divHeader1.id = "divHeader1";
+divHeader1.innerText = "Featured Exhibitors";
+document.body.appendChild(divHeader1);
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
 document.body.appendChild(containerDiv);
+//-Div 2-//
+const divHeader2 = document.createElement("h2");
+divHeader2.id = "divHeader2";
+divHeader2.innerText = "Our Exhibitors";
+document.body.appendChild(divHeader2);
 const containerDiv2 = document.createElement("div");
 containerDiv2.id = "containerDiv-2";
 document.body.appendChild(containerDiv2);
@@ -66,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const getExhibitors = async () => {
 	//--Fetch Exhibitor Data--//
 	const getExhibitorData = await fetch(
-		"https://fakerapi.it/api/v1/companies?_quantity=8"
+		"https://fakerapi.it/api/v1/companies?_quantity=5"
 	);
 	const companyDataJson = await getExhibitorData.json();
 	//--Create Exhibitor Card(s)--//
@@ -115,7 +125,7 @@ const getExhibitors = async () => {
 const getExhibitors2 = async () => {
 	//--Fetch Exhibitor Data--//
 	const getExhibitorData = await fetch(
-		"https://fakerapi.it/api/v1/companies?_quantity=8"
+		"https://fakerapi.it/api/v1/companies?_quantity=20"
 	);
 	const companyDataJson = await getExhibitorData.json();
 	//--Create Exhibitor Card(s)--//

@@ -35,18 +35,22 @@ body {
 #anchorHome {
 	margin-right: 20px;
 	margin-left: 80px;
+	text-decoration: none;
 }
 #anchorCreators {
 	margin-right: 20px;
 	margin-left: 20px;
+	text-decoration: none;
 }
 #anchorProducts {
 	margin-right: 20px;
 	margin-left: 20px;
+	text-decoration: none;
 }
 #anchorCompanies {
 	margin-right: 80px;
 	margin-left: 20px;
+	text-decoration: none;
 }
 
 /*--About & Container Divs--*/

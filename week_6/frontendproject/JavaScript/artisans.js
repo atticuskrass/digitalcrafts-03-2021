@@ -15,9 +15,19 @@ headerDiv.append(appTitle);
 
 //--Container Div--//
 
+//-Div 1-//
+const divHeader1 = document.createElement("h2");
+divHeader1.id = "divHeader1";
+divHeader1.innerText = "Featured Sellers";
+document.body.appendChild(divHeader1);
 const containerDiv = document.createElement("div");
 containerDiv.id = "containerDiv-1";
 document.body.appendChild(containerDiv);
+//-Div 2-//
+const divHeader2 = document.createElement("h2");
+divHeader2.id = "divHeader2";
+divHeader2.innerText = "Our Sellers";
+document.body.appendChild(divHeader2);
 const containerDiv2 = document.createElement("div");
 containerDiv2.id = "containerDiv-2";
 document.body.appendChild(containerDiv2);
@@ -112,7 +122,7 @@ const getCreators = async () => {
 };
 const getCreators2 = async () => {
 	//--Fetch Creator Data--//
-	const getCreatorData = await fetch("https://randomuser.me/api/?results=10");
+	const getCreatorData = await fetch("https://randomuser.me/api/?results=20");
 	const peopleDataJson = await getCreatorData.json();
 	console.log(peopleDataJson);
 	//--Featured Creator Card(s)--//
