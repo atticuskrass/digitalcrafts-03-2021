@@ -38,25 +38,25 @@ const anchorDiv = document.createElement("div");
 anchorDiv.id = "anchorDiv";
 headerDiv.append(anchorDiv);
 const anchorHome = document.createElement("a");
-anchorHome.setAttribute("href", "../index.html");
+anchorHome.setAttribute("href", "index.html");
 anchorHome.innerText = "Home";
 anchorHome.className = "headerAnchor";
 anchorHome.id = "anchorHome";
 anchorDiv.append(anchorHome);
 const anchorCreators = document.createElement("a");
-anchorCreators.setAttribute("href", "../artisans.html");
+anchorCreators.setAttribute("href", "artisans.html");
 anchorCreators.innerText = "Artisans";
 anchorCreators.className = "headerAnchor";
 anchorCreators.id = "anchorCreators";
 anchorDiv.append(anchorCreators);
 const anchorProducts = document.createElement("a");
-anchorProducts.setAttribute("href", "../market.html");
+anchorProducts.setAttribute("href", "market.html");
 anchorProducts.innerText = "Market";
 anchorProducts.className = "headerAnchor";
 anchorProducts.id = "anchorProducts";
 anchorDiv.append(anchorProducts);
 const anchorCompanies = document.createElement("a");
-anchorCompanies.setAttribute("href", "../exhibitors.html");
+anchorCompanies.setAttribute("href", "exhibitors.html");
 anchorCompanies.innerText = "Exhibitors";
 anchorCompanies.className = "headerAnchor";
 anchorCompanies.id = "anchorCompanies";
@@ -85,11 +85,14 @@ const getCreators = async () => {
 	let counter = 0;
 	for (let creator of peopleDataJson.results) {
 		//-Div-//
+
 		const featuredCreatorDiv = document.createElement("div");
 		featuredCreatorDiv.className = "featuredCreatorDiv";
 		featuredCreatorDiv.setAttribute("id", `creator-${counter}`);
 		containerDiv.append(featuredCreatorDiv);
+
 		//-Element InnerText-//
+
 		let personFirstName = peopleDataJson.results[counter].name.first;
 		let personLastName = peopleDataJson.results[counter].name.last;
 		let personCity = peopleDataJson.results[counter].location.city;
@@ -97,11 +100,14 @@ const getCreators = async () => {
 		let personEmail = peopleDataJson.results[counter].email;
 		let personPicture = peopleDataJson.results[counter].picture.large;
 		//-Creator Name Header-//
+
 		const personName = document.createElement("h3");
 		personName.id = "personName";
 		featuredCreatorDiv.append(personName);
 		personName.innerText = `${personLastName}, ${personFirstName}`;
+
 		//-Creator Card List-//
+
 		const personCardList = document.createElement("ul");
 		personCardList.id = "personList";
 		featuredCreatorDiv.append(personCardList);
@@ -133,19 +139,25 @@ const getCreators2 = async () => {
 		featuredCreatorDiv.className = "featuredCreatorDiv";
 		featuredCreatorDiv.setAttribute("id", `creator-${counter}`);
 		containerDiv2.append(featuredCreatorDiv);
+
 		//-Element InnerText-//
+
 		let personFirstName = peopleDataJson.results[counter].name.first;
 		let personLastName = peopleDataJson.results[counter].name.last;
 		let personCity = peopleDataJson.results[counter].location.city;
 		let personCountry = peopleDataJson.results[counter].location.country;
 		let personEmail = peopleDataJson.results[counter].email;
 		let personPicture = peopleDataJson.results[counter].picture.large;
+
 		//-Creator Name Header-//
+
 		const personName = document.createElement("h3");
 		personName.id = "personName";
 		featuredCreatorDiv.append(personName);
 		personName.innerText = `${personLastName}, ${personFirstName}`;
+
 		//-Creator Card List-//
+
 		const personCardList = document.createElement("ul");
 		personCardList.id = "personList";
 		featuredCreatorDiv.append(personCardList);
