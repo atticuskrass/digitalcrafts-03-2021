@@ -48,8 +48,8 @@ app.put("/update_artist/:id", async (req, res) => {
 	try {
 		const { artist_id } = req.params;
 		const { first_name, last_name, country_name, city_name } = req.body;
-		const updateArtist = pool.query(
-			"UPDATE artist SET first_name, last_name, country_name, city_name VALUES($1,$2,$3,$4) WHERE artist_id",
+		const updateArtist = await pool.query(
+			"UPDATE artist SET first_name=($1),last_name=($2),country_name=($3),city_name=($4) WHERE artist_id",
 			[first_name, last_name, country_name, city_name][artist_id]
 		);
 		res.json(updateArtist);
