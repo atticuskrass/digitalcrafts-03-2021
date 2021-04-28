@@ -7,7 +7,15 @@
 		<title>Artist Page</title>
 	</head>
 	<body>
-		<h1>Artist Name</h1>
-		<p>${rows.first_name}</p>
+		<dl>
+			${artists.map(artist => `
+			<h3>Artist Name</h3>
+			<dt>${artist.first_name},${artist.last_name}</dt>
+			<h3>Origin Country</h3>
+			<dt>${artist.country_name}</dt>
+			<h3>Movement</h3>
+			<dt>${artist.movement_name}</dt>
+			` ).join("")};
+		</dl>
 	</body>
 </html>
