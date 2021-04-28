@@ -3,18 +3,17 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const es6Renderer = require("express-es6-template-engine");
-require("dotenv").config();
-const port = process.env.PORT || 3000;
+const port = 3000;
 const pool = require("./db.js");
+const es6Renderer = require("express-es6-template-engine");
 
 // --- Middleware --- //
 
+app.use(express.json());
+app.use(cors());
 app.engine("html", es6Renderer);
 app.set("views", "../templates");
 app.set("view engine", "html");
-app.use(express.json());
-app.use(cors());
 
 // --- Routes --- //
 
@@ -32,12 +31,11 @@ app.post("/add_artist", async (req, res) => {
 		);
 		res.json(addArtist);
 	} catch (err) {
-		res.status(404);
-		res.send("Error. Please try again.");
+		console.log(err.message);
 	}
 });
-// - Delete Artist - //
-app.post("/delete_artist/:id", async (req, res) => {
+//- Delete Artist - //
+app.delete("/delete_artist/:id", async (req, res) => {
 	try {
 		const { id } = req.params;
 		const updateArtist = await pool.query(
@@ -53,29 +51,14 @@ app.post("/delete_artist/:id", async (req, res) => {
 app.get("/view_artist", async (req, res) => {
 	try {
 		const getArtist = await pool.query("SELECT * FROM artist");
-		res.json(getArtist);
+		const artist = getArtist.rows;
+		res.render("artist", { locals: { artists: artist } });
 	} catch (err) {
 		console.log(err.message);
 	}
 });
-// - View Individual Artist - //
-app.get("/view_artist/:id", async (req, res) => {
-	const { id } = req.params;
-	try {
-		const getOneArtist = await pool.query(
-			"SELECT * FROM artist WHERE artist_id = $1 ORDER BY artist_id",
-			[id]
-		);
-		// res.json(getOneArtist);
-		res.render("artist", {
-			locals: { getOneArtist: req.body, rows: "first_name" },
-		});
-	} catch (err) {
-		console.log(err.message);
-	}
-});
-// - Update Artist Data - //
-app.post("/edit_artist/:id", async (req, res) => {
+//- Update Artist Data - //
+app.put("/edit_artist/:id", async (req, res) => {
 	try {
 		const { id } = req.params;
 		const { first_name, last_name, country_name, movement_name } = req.body;
