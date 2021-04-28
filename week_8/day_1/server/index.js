@@ -17,11 +17,11 @@ app.set("view engine", "html");
 
 // --- Routes --- //
 
-// - Root - //
+// - Root/Home Page - //
 app.get("/", (req, res) => {
 	res.render("index");
 });
-// - Add Artist - //
+// - Create Artist - //
 app.post("/add_artist", async (req, res) => {
 	try {
 		const { first_name, last_name, country_name, movement_name } = req.body;
@@ -34,20 +34,7 @@ app.post("/add_artist", async (req, res) => {
 		console.log(err.message);
 	}
 });
-//- Delete Artist - //
-app.delete("/delete_artist/:id", async (req, res) => {
-	try {
-		const { id } = req.params;
-		const updateArtist = await pool.query(
-			"DELETE FROM artist WHERE artist_id = $1",
-			[id]
-		);
-		res.json(updateArtist);
-	} catch (err) {
-		console.log(err.message);
-	}
-});
-// - View Artist(s) - //
+// - Read Artist(s) - //
 app.get("/view_artist", async (req, res) => {
 	try {
 		const getArtist = await pool.query("SELECT * FROM artist");
@@ -65,6 +52,19 @@ app.put("/edit_artist/:id", async (req, res) => {
 		const updateArtist = await pool.query(
 			"UPDATE artist SET(first_name,last_name, country_name, movement_name) = ($1, $2, $3, $4) WHERE artist_id = $5",
 			[first_name, last_name, country_name, movement_name, id]
+		);
+		res.json(updateArtist);
+	} catch (err) {
+		console.log(err.message);
+	}
+});
+//- Delete Artist - //
+app.delete("/delete_artist/:id", async (req, res) => {
+	try {
+		const { id } = req.params;
+		const updateArtist = await pool.query(
+			"DELETE FROM artist WHERE artist_id = $1",
+			[id]
 		);
 		res.json(updateArtist);
 	} catch (err) {

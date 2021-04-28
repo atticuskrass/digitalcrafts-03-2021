@@ -4,13 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Artist Search</title>
+		<title>ArtSearch</title>
 	</head>
 	<body>
-		<h1 class="header">Artist Search</h1>
-		<!-- <p>Fill in search fields</p>
-		<input type="type" />
-		<button>Submit</button>
-		<a href="../view_artist">View Artist(s)</a> -->
+		<h1>ArtSearch</h1>
+		<a href="/view_artist">View Artist Database</a>
+		<h2>Add Artist to Our Database</h2>
+		<form action="/add_artist" method="post">
+			<label for="artist">Artist:</label>
+			<input type="text" id="artist" name="artist" /><br /><br />
+			<input type="submit" value="Submit" class="submitbtn" />
+		</form>
 	</body>
 </html>
