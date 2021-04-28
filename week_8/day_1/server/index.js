@@ -44,7 +44,7 @@ app.get("/view_artist", async (req, res) => {
 		console.log(err.message);
 	}
 });
-//- Update Artist Data - //
+// - Update Artist Data - //
 app.put("/edit_artist/:id", async (req, res) => {
 	try {
 		const { id } = req.params;
@@ -58,7 +58,7 @@ app.put("/edit_artist/:id", async (req, res) => {
 		console.log(err.message);
 	}
 });
-//- Delete Artist - //
+// - Delete Artist - //
 app.delete("/delete_artist/:id", async (req, res) => {
 	try {
 		const { id } = req.params;
