@@ -1,0 +1,19 @@
+.header {
+	width: 100%;
+}
+.logo {
+	margin-left: 370px;
+}
+.search {
+	width: 0;
+	height: 0;
+	margin-left: 700px;
+	border-radius: 50px;
+}
+.buttons {
+	margin-left: 880px;
+	margin-top: 50px;
+}
+.footer {
+	width: 100%;
+}

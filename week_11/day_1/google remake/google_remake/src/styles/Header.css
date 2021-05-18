@@ -1,0 +1,30 @@
+.navbar {
+	display: flex;
+	font-family: sans-serif;
+}
+.nav-links-1 {
+	margin-left: 1%;
+	margin-top: 1%;
+}
+.nav-links-1 a {
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+}
+.nav-links-1 li {
+	display: inline;
+	margin-left: 30px;
+}
+.nav-links-2 {
+	margin-left: 80%;
+	margin-top: 1%;
+}
+.nav-links-2 a {
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+}
+.nav-links-2 li {
+	display: inline;
+	margin-left: 30px;
+}

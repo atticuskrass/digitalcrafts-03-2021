@@ -1,0 +1,21 @@
+.searchbar {
+	padding: 10px 200px 10px 200px;
+	border-radius: 40px;
+}
+.search-btns {
+	display: flex;
+	font-family: sans-serif;
+}
+.search-btns {
+	margin-left: 1%;
+	margin-top: 1%;
+}
+.search-btns a {
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+}
+.search-btns li {
+	display: inline;
+	margin-left: 50px;
+}
