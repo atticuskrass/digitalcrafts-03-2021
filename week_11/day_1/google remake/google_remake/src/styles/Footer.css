@@ -1,0 +1,25 @@
+.footer-list {
+	display: flex;
+	list-style: none;
+	font-family: sans-serif;
+	margin-left: 30px;
+	margin-top: 540px;
+}
+.footer-2 {
+	margin-left: 10px;
+}
+.footer-3 {
+	margin-left: 10px;
+}
+.middle {
+	margin-left: 520px;
+}
+.right-side-1 {
+	margin-left: 650px;
+}
+.right-side-2 {
+	margin-left: 30px;
+}
+.right-side-3 {
+	margin-left: 30px;
+}
