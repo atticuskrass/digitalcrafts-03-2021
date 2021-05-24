@@ -21,9 +21,9 @@ componentDidMount() {
 //--searchCriteria assigns "event.target.value" into the variable "search", it then modifies the state property "searchCriteria" 
 //--by adding the variable "search" as it's value, the value it's targeting comes from the text entered in the field itself
 searchCriteria = (event) => {
-    const search = event.target.value;
+    const search = event.target.value.toLowerCase()
     this.setState({
-        searchCriteria:search
+        searchCriteria: search,
 })
 }
 //--this function targets the values entered in the create inputs and sends
@@ -44,15 +44,14 @@ onSubmit = (event, filteredData) => {
         pokemonHP: this.state.pokemonHP
 }
     const newPokemonList = [newPokemon,...this.state.pokemonList]
-    this.setState({pokemonList:newPokemonList})
-};
+        this.setState({pokemonList: newPokemonList})
+}
     render() {
         //--I destructured the state property "pokemonList", I created a variable called filteredData and assigned it
         //--the pokemonList with the filter and includes methods that allows the data to be parsed according to the searchCriteria property
         //--which is attached to the search-field input
-        const { pokemonList } = this.state
-        const filteredData = pokemonList.filter((pokemon) =>
-        pokemon.name.includes(this.state.searchCriteria)) 
+        const {pokemonList} = this.state
+        const filteredData = pokemonList.filter((pokemon) => pokemon.name.includes(this.state.searchCriteria)) 
         //--attached functions to the onChange method of each input
         return (
             <div className="card-container">
