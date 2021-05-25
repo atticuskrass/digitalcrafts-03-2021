@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header.jsx";
 import FilmContainer from "./components/FilmContainer.jsx";
+import "./App.css";
 
 export default function App() {
 	return (
