@@ -24,7 +24,7 @@ export default function FilmContainer() {
 
 	const getFilmsDefault = async () => {
 		const filmData = await fetch(
-			"http://www.omdbapi.com/?apikey=446be3ac&s=type"
+			"http://www.omdbapi.com/?apikey=446be3ac&s=horror"
 		);
 		const filmDataJson = await filmData.json();
 		setFilms(filmDataJson.Search);
@@ -32,7 +32,7 @@ export default function FilmContainer() {
 
 	const getFilms = async () => {
 		const filmData = await fetch(
-			`http://www.omdbapi.com/?apikey=446be3ac&s=${userInput}`
+			`http://www.omdbapi.com/?apikey=446be3ac&t=${userInput}`
 		);
 		const filmDataJson = await filmData.json();
 		setFilms(filmDataJson.Search);
