@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Films from "./Films.jsx";
+import Header from "./Header.jsx";
 import "../styles/Films.css";
+import "../styles/FilmContainer.css";
 
 export default function FilmContainer() {
     const [films, setFilms] = useState([]);
@@ -38,6 +40,7 @@ export default function FilmContainer() {
 	
     return (
 		<div className="film__divContainer">
+			<Header />
 			<div className="film__cardDataMap">
 					{films.map((film) => (
 						<Films film={film}/>
