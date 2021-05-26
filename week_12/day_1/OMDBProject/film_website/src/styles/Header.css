@@ -18,3 +18,12 @@
 	margin-left: 10px;
 	margin-top: 7px;
 }
+.film__searchForm {
+	margin-left: 500px;
+	margin-top: 10px;
+}
+.film__searchField {
+	padding: 5px;
+	width: 500px;
+	border-radius: 50px;
+}

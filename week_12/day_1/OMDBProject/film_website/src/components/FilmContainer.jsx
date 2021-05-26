@@ -32,7 +32,7 @@ export default function FilmContainer() {
 
 	const getFilms = async () => {
 		const filmData = await fetch(
-			`http://www.omdbapi.com/?apikey=446be3ac&t=${userInput}`
+			`http://www.omdbapi.com/?apikey=446be3ac&s=${userInput}`
 		);
 		const filmDataJson = await filmData.json();
 		setFilms(filmDataJson.Search);
@@ -40,22 +40,18 @@ export default function FilmContainer() {
 	
     return (
 		<div className="film__divContainer">
-			<Header />
+			<Header 
+				userInput={userInput} 
+				setUserInput={setUserInput} 
+				changeInput={changeInput}
+				handleSubmit={handleSubmit}		
+ 			/>
+			<h1 className="film__resultsHeader">Search Results</h1>
 			<div className="film__cardDataMap">
 					{films.map((film) => (
 						<Films film={film}/>
 					))}
        		</div>
-		<form className="film__searchForm" onSubmit={handleSubmit}>
-		<input 
-			className="film__searchField" 
-			type="text" 
-			placeholder="Search for film"
-			value={userInput}
-			onChange={changeInput}
-		></input>
-		<button className="film__submitBtn" type="submit">Get Films</button>
-		</form>
 		</div>
     )
 }
