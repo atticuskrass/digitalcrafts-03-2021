@@ -1,13 +1,5 @@
 .films__getFilmDisplay {
-	background-color: red;
-}
-.film__title {
-	color: white;
-	margin-left: 80px;
-}
-.film__standard {
-	color: white;
-	margin-left: 140px;
+	background-color: black;
 }
 .film__Poster {
 	margin-left: 20px;
