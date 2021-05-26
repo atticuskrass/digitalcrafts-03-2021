@@ -8,7 +8,7 @@ export default function FilmContainer() {
 	const [userInput, setUserInput] = useState("");
 
 	useEffect(() => {
-		getFilms();
+		getFilmsDefault();
 	}, []);
 
 	const changeInput = (event) => {
@@ -20,14 +20,22 @@ export default function FilmContainer() {
 		getFilms()		
 	}
 
+	const getFilmsDefault = async () => {
+		const filmData = await fetch(
+			"http://www.omdbapi.com/?apikey=446be3ac&s=type"
+		);
+		const filmDataJson = await filmData.json();
+		setFilms(filmDataJson.Search);
+		};
+
 	const getFilms = async () => {
 		const filmData = await fetch(
 			`http://www.omdbapi.com/?apikey=446be3ac&s=${userInput}`
 		);
 		const filmDataJson = await filmData.json();
 		setFilms(filmDataJson.Search);
-	};
-	// console.log(filmDataJson.Search);
+		};
+	
     return (
 		<div className="film__divContainer">
 			<div className="film__cardDataMap">
