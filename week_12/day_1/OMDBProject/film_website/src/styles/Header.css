@@ -1,4 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Creepster&family=Oswald&display=swap");
+
 .header__container {
-	background-color: #6a5acd;
-	height: 6vh;
+	display: flex;
+	background-color: black;
+	padding: 20px;
+	border-bottom: 5px solid red;
+	object-fit: contain;
+}
+.header__Logo {
+	width: 40px;
+	height: 40px;
+}
+.header__name {
+	color: white;
+	font-family: Creepster;
+	font-size: x-large;
+	margin-left: 10px;
+	margin-top: 7px;
 }

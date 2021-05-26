@@ -7,7 +7,7 @@ export default function Films({ film }) {
             <h4 className="film__title">{film.Title}</h4>
             <p className="film__standard">{film.Year}</p>
             <p className="film__standard">{film.Type}</p>
-            <img src={film.Poster} alt=""></img>
+            <img className="film__Poster" src={film.Poster} alt=""></img>
             </div>
     )
 }
